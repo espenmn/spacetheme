@@ -221,7 +221,7 @@ table {
   z-index: 2;
 }
 .topimageoverlaysubpage {
-  background-image: url("images/subpageraster.png");
+  background-image: url(images/subpageraster.png);
   width: 100%;
   height: 134px;
   position: absolute;
@@ -232,7 +232,7 @@ table {
 /* theme logo */
  
  #portal-logo{
-  background-image: url("images/logo_background.png");
+  background-image: url(images/logo_background.png);
   background-repeat: no-repeat;
   background-size: 380px 70px;
   height: 72px;
@@ -267,8 +267,8 @@ table {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 10px 5px 20px;
-  background-image: url("/images/topimageoverlay1440.png");
+  padding: 4px 5px 0;
+  background-image: url(images/topimageoverlay1440.png);
 }
 .social {
   -webkit-box-ordinal-group: 3;
@@ -282,9 +282,9 @@ table {
   background-image: url(images/icon_background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 2.6em;
-  line-height: 2.6em;
-  min-height: 2.6em;
+  min-width: 1.8em;
+  line-height: 1.8em;
+  min-height: 1.8em;
   margin-left:  4px;
   color:  white;
   text-decoration: none;
@@ -1642,7 +1642,6 @@ video#bgtopbannervideo {
     float: right;
     position: relative;
     z-index: 4;
-    padding-top: 10px;
     display: inherit;
     flex-direction: unset;
     -webkit-flex-direction: unset;
