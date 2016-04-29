@@ -3,11 +3,16 @@
 
 /*Framework */
 body {
-  font-family: "nimbus-sans", sans-serif;
+  font-family: "Droid Sans", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 14px;
+  line-height: 17pt;
   color: #4c4c4c;
+}
+
+.red {
+	 color: red;
 }
 h1,
 h2,
@@ -47,6 +52,13 @@ a {
 a:hover {
   text-decoration: none;
 }
+
+
+ul.doublearrow a:visited {
+   color: #5c1778;
+
+}
+
 #shareIcons {
   float: right;
   border: 2px solid #eee;
@@ -266,7 +278,18 @@ table {
 }
 .social a {
   float: left;
-  padding-right: 6px;
+  padding: 0;
+  background-image: url(images/icon_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 2.6em;
+  line-height: 2.6em;
+  min-height: 2.6em;
+  margin-left:  4px;
+  color:  white;
+  text-decoration: none;
+  font-size: 1.3em;
+  
 }
 .login {
   -webkit-flex-wrap: wrap;
