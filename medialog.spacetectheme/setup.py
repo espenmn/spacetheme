@@ -21,6 +21,7 @@ setup(
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Plone",
+        "Framework :: Plone :: 5.0",
         "Framework :: Plone :: 1.0",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
@@ -38,13 +39,18 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
+        'collective.themefragments',
+        'medialog.iconpicker',
         'plone.api',
-        'Products.GenericSetup>=1.8.2',
-        'setuptools',
-        'z3c.jbot',
+		'plone.app.contentlisting',
+		'plone.app.mosaic',
         'plone.app.theming',
         'plone.app.themingplugins',
-    ],
+        'Products.GenericSetup>=1.8.2',
+        'setuptools',
+		'webcouturier.dropdownmenu',
+        'z3c.jbot',
+	],
     extras_require={
         'test': [
             'plone.app.testing',
