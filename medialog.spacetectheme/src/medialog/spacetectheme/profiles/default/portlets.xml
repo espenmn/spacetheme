@@ -3,7 +3,7 @@
 
  <portletmanager
    name="plone.belowportlets"
-   type="medialog.apacetectheme.interfaces.IBelow"
+   type="medialog.spacetectheme.interfaces.IBelow"
    />
 
 </portlets>
