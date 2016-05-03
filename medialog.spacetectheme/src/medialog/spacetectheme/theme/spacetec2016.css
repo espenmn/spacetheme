@@ -627,6 +627,17 @@ figure.newsImageContainer.image-large {
 	padding: 0;
 }
 
+figure.newsImageContainer.image-mini,
+figure.newsImageContainer.image-icon,
+figure.newsImageContainer.image-thumb,
+figure.newsImageContainer.image-tile,
+figure.newsImageContainer.image-preview {
+	float:  right;
+	margin-right: 0;	
+}
+
+
+
 figure.newsImageContainer.image-large img {
 	width: 100%;
 	
