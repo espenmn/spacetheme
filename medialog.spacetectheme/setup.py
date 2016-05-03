@@ -49,8 +49,7 @@ setup(
         'plone.app.themingplugins',
         'Products.GenericSetup>=1.8.2',
         'setuptools',
-		'webcouturier.dropdownmenu',
-        'z3c.jbot',
+		'z3c.jbot',
 	],
     extras_require={
         'test': [
