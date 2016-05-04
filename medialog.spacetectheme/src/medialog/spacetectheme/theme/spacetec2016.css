@@ -142,6 +142,7 @@ h2,
   text-decoration: none;
 }
 
+#portal-footer-wrapper .portletHeader,
 aside#portal-column-two .portletHeader,
 #viewlet-below-content .portletHeader,
 h1.documentFirstHeading {
@@ -152,6 +153,7 @@ h1.documentFirstHeading {
    padding-bottom: 20px;
   background-position: bottom;
 }
+ 
 
  
  
