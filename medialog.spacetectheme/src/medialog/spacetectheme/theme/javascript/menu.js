@@ -27,7 +27,6 @@ $(document).ready(function () {
     });
 
     $('#LeftMenuWrapper .navTreeLevel3 a.contenttype-folder').click(function (event) {
-        event.preventDefault();
         $(".navTreeLevel3 > li").addClass("hidden");
         $(this).parent().removeClass("hidden");
         $(".hidden .selected").removeClass("hidden");
