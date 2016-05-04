@@ -85,6 +85,10 @@ input.searchButton {
 	 margin: 3px;	 
 }
 
+ul.livesearch-results {
+	margin-top:  20px !important;
+}
+
 
 
 
