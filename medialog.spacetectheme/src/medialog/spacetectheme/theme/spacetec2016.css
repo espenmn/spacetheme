@@ -1463,10 +1463,11 @@ padding-left: 100px;
 padding-right: 20px;	
 }
 
-ul.navTree.navTreeLevel0 ,
-ul.navTree.navTreeLevel1 ,
+ul.navTree.navTreeLevel0,
+ul.navTree.navTreeLevel1,
 ul.navTree.navTreeLevel2,
-ul.navTree.navTreeLevel3
+ul.navTree.navTreeLevel3,
+ul.navTree.navTreeLevel4
 {
 	display: none;
 }
@@ -1519,7 +1520,7 @@ ul#portal-sitemap li a{
 	text-decoration: none;
 }
 
-a.contenttype-folder:after {
+li.navTreeItem > a.contenttype-folder:before {
  float:  right;;
   content: "\f0a9";
   display: inline-block;
@@ -1528,6 +1529,7 @@ a.contenttype-folder:after {
   font: 1.8em FontAwesome;
   vertical-align: top;
 }
+
 
 .selected > a.contenttype-folder:after {
   display:  none;
