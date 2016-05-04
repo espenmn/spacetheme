@@ -31,10 +31,13 @@
         <!-- full-width breadcrumb -->
   		<replace css:theme="#above-content" css:content="#viewlet-above-content"/>
   		
+  		<!-- sitemap for navigation -->
+  		<replace css:theme="#portal-sitemap"    css:content="#portal-sitemap"     href="/@@sitemap" /> 
+  		
   		<!-- move search box -->
- 		<drop css:content=".searchButton" />
+ 		<!--drop css:content=".searchButton" />
  		<drop css:content=".searchSection" />
- 		<replace  css:theme-children="#portal-searchbox"   css:content-children="#portal-searchbox"  />
+ 		<replace  css:theme-children="#portal-searchbox"   css:content-children="#portal-searchbox"  /-->
 
 		  <!-- Central column -->
 		  <replace css:theme="#content-container" method="raw">
