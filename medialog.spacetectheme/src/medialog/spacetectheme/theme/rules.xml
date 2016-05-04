@@ -36,8 +36,8 @@
   		
   		<!-- move search box -->
  		<!--drop css:content=".searchButton" />
- 		<drop css:content=".searchSection" />
- 		<replace  css:theme-children="#portal-searchbox"   css:content-children="#portal-searchbox"  /-->
+ 		<drop css:content=".searchSection" /-->
+ 		<replace  css:theme-children="#portal-searchbox"   css:content-children="#portal-searchbox"  />
 
 		  <!-- Central column -->
 		  <replace css:theme="#content-container" method="raw">

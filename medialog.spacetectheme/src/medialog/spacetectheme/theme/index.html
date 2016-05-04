@@ -44,12 +44,6 @@
 
 </div>
 
-
-
-
-
-
- 				
  				
 	<div class="contentwrapper">
 	    <div class="notmobile">
@@ -74,7 +68,7 @@
 							<a target="_blank" href="twitter"><i class="fa fa-twitter"></i></a>
 							<a target="_blank" href="instagram"><i class="fa fa-instagram"></i></a>
 							<a target="_blank" href="mailto:post@spacetec.no"><i class="fa fa-envelope"></i></a>
-							<a href="#modalsearch1" class="pat-modal" data-pat-modal="{}">
+							<a href="#modalsearch1" class="pat-plone-modal" data-pat-modal="{}">
 							<!--a target="_blank" href="search_form"-->
 							<i class="fa fa-search"></i></a>
 
@@ -104,13 +98,11 @@
         <div id="above-content"></div>
         <!--div id="portal-searchbox"></div-->
 		<div class="searchboks">
-			<a href="#modalsearch1" class="pat-modal" data-pat-modal="{}">
+			<a href="#modalsearch1" class="pat-plone-modal" data-pat-modal="{}" data-plone-pat-modal="top: 100px">
 		   		<i class="fa fa-search" aria-hidden="true"></i>
 		   	</a>
 			<div id="modalsearch1" style="display: none">
-			   <form action="search" class="pat-livesearch" data-pat-livesearch="ajaxUrl:livesearch.json">
-					<input type="text" />
-				</form>
+			   <div id="portal-searchbox" />
 		   	</div>
         </div>
 
