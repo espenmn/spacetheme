@@ -35,8 +35,8 @@
   		<replace css:theme="#portal-sitemap"    css:content="#portal-sitemap"     href="/@@sitemap" /> 
   		
   		<!-- move search box -->
- 		<!--drop css:content=".searchButton" />
- 		<drop css:content=".searchSection" /-->
+ 		<!--drop css:content=".searchButton" /-->
+ 		<drop css:content=".searchSection" />
  		<replace  css:theme-children="#portal-searchbox"   css:content-children="#portal-searchbox"  />
 
 		  <!-- Central column -->

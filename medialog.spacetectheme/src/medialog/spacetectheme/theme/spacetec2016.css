@@ -1,7 +1,7 @@
 /* @override 
 	http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
 	http://localhost:8080/Spcetec/++theme++medialog.spacetectheme/spacetec2016.css
- 
+	http://localhost:8080/Plone6y/++theme++medialog.spacetectheme/spacetec2016.css
 */
 
 .managePortletsFallback,
@@ -70,6 +70,22 @@ div.outer-wrapper {
 		height: auto;
 		display: block;
 }
+
+input#searchGadget.searchField {
+	font-size: 22px;
+	width: 76%;
+	padding:5px 10px;
+}
+
+input.searchButton {
+	 padding: 6px 15px;
+	 background: #DDD;
+	 border:  0 none;;
+	 font-size: 1.4em;
+	 margin: 3px;	 
+}
+
+
 
 
 .searchboks {
