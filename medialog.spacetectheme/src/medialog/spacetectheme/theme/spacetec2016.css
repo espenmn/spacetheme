@@ -18,6 +18,8 @@
 	display: none;
 }
 
+ 
+
 /*Framework */
 body {
   font-family: "Droid Sans", sans-serif;
@@ -479,12 +481,16 @@ div.header {
     -webkit-order: 0;
  
   }
-div.header .social a {
+div.header .social a{
   float: left;
   padding: 1px;
   margin-left:  4px;
   color:  white;
   text-decoration: none;  
+}
+
+ div.social a.supportweb span {
+	display: inline-block;
 }
 
 .portlet   {
@@ -1045,6 +1051,14 @@ label {
 }
 /**/
 
+
+
+@media (max-width: 700px) {
+	div.social a.supportweb span.notmobile {
+	display: none;
+}
+}
+
  
 @media (min-width: 701px) {
   /*Framework */
@@ -1090,6 +1104,7 @@ label {
   .notmobile {
     display: block;
   }
+
   .onlymobile {
     display: none;
   }
@@ -1669,8 +1684,10 @@ div#somethingleft i {
 }
 
 
-#navbuttonLabel.onlymobile i {
-	font-size: 230%;
+#navbuttonLabel.onlymobile label {
+	font-size: 280%;
+	padding-top: 0px;
+	padding-left: 20px;
 }
 
 
