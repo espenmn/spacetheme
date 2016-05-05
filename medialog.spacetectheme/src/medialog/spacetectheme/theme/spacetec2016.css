@@ -10,6 +10,8 @@
     background-image: url("images/topimageoverlay1440.png");
   }
   
+
+  
 .managePortletsFallback,
 .hiddenStructure,
 .hidden {
@@ -467,11 +469,16 @@ div.header {
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 3;
   -webkit-order: 3;
-  order: 3;
-  margin: 0 1em 0 auto;
-  padding-top: 7px;
-  
-}
+   margin: 0 1em 0 auto;
+   padding-top: 7px;
+   padding-left: 20px;
+  	float: left;
+    text-align: center;
+    display: inherit;
+    order: 0;
+    -webkit-order: 0;
+ 
+  }
 div.header .social a {
   float: left;
   padding: 1px;
@@ -498,6 +505,8 @@ a.supportweb {
   min-height: 1.8em;
   font-size: 1.3em; 
 }
+
+
 .login {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -1036,7 +1045,7 @@ label {
 }
 /**/
 
-
+ 
 @media (min-width: 701px) {
   /*Framework */
   body {
@@ -1138,14 +1147,7 @@ label {
     margin-right: 15px;
     margin-left: 15px;
   }
-  .social {
-    float: left;
-    padding-left: 20px;
-    text-align: center;
-    display: inherit;
-    order: 0;
-    -webkit-order: 0;
-  }
+
   .rss {
     float: left;
     padding-right: 16px;
