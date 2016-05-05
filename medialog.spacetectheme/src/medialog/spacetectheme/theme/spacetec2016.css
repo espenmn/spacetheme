@@ -1,9 +1,15 @@
+/* @override http://localhost:8080/Plone6y/++theme++medialog.spacetectheme/spacetec2016.css */
+
 /* @override 
 	http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
 	http://localhost:8080/Spcetec/++theme++medialog.spacetectheme/spacetec2016.css
 	http://localhost:8080/Plone6y/++theme++medialog.spacetectheme/spacetec2016.css
 */
 
+ .section-front-page .topimageoverlay {
+    background-image: url("images/topimageoverlay1440.png");
+  }
+  
 .managePortletsFallback,
 .hiddenStructure,
 .hidden {
@@ -113,6 +119,7 @@ div#above-content-wrapper {
 	display: flex;
 	background-color: #283643;
 	height: 50px;
+	overflow: hidden;
 }
 
 #LeftMenuWrapper  div {
@@ -192,6 +199,13 @@ img {
   height: auto;
   border: none;
 }
+
+figure.image-product {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
 
 div.tileImage {
 	float:right;
@@ -874,15 +888,6 @@ iframe {
   background-color: #ddd;
 }
 
-/* @group Breadcrumbs */
-
-/* Breadcrumb */
-
-#BreadCrumbWrap {
-  position: relative;
-  top: -1px;
-}
-
 #viewlet-above-content {
 	background-color: #283643;
 	font-size: 15px;
@@ -890,6 +895,15 @@ iframe {
   position: relative;
   display: flex;
   
+}
+
+/* @group Breadcrumbs */
+
+/* Breadcrumb */
+
+#BreadCrumbWrap {
+  position: relative;
+  top: -1px;
 }
 
 #portal-breadcrumbs{
@@ -927,9 +941,31 @@ span#breadcrumbs-current,
   padding: 0 23px 0 30px;
   
 }
+ 
+@media (max-width: 800px)  {
+	
+#portal-breadcrumbs li a {
+	font-size: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 40px;
+	display: inline-block;
+	background-image: url(images/threedots.png);
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	}
+	
+	span#breadcrumbs-current {
+	text-transform: none;
+	font-size: 12px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+ 
+}
 
-span#breadcrumbs-current {
-	text-transform: inherit
+#portal-breadcrumbs  span#breadcrumbs-current li {
+	background-image: none;
 }
 
 li#breadcrumbs-1 {
@@ -971,31 +1007,6 @@ li#breadcrumbs-3 {
 
 
 
-
-
-
-
-
-#BreadCrumb ol > li > a > span {
-  float: left;
-  background-image: url("images/threedots.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin-right: -22px;
-  padding: 34px 16px 16px 8px;
-  width: 31px;
-  font-size: 0;
-}
-#BreadCrumb ol > li:last-child > a > span {
-  background-image: none;
-  font-size: 12px;
-  margin: 0;
-  padding: 16px 16px 16px 30px;
-  width: 100%;
-}
-#BreadCrumb ol > li > a > span:hover {
-  text-decoration: underline;
-}
 
 /* @end */
 
@@ -1091,9 +1102,6 @@ label {
   /* Header */
   .topimageoverlay {
     height: 50px;
-  }
-  .section-front-page .topimageoverlay {
-    background-image: url("images/topimageoverlay1440.png");
   }
 
  #portal-logo{
@@ -1421,61 +1429,7 @@ label {
     width: 65%;
   }
  }
-
-/* @group breadcrumb */
-
-/* Breadcrumb */
-  #BreadCrumbWrap {
-    top: -57px;
-  }
-  #BreadCrumb {
-    font-size: 14px;
-    height: 50px;
-    top: -14px;
-  }
-  #BreadCrumb ol {
-    display: block;
-  }
-  #BreadCrumb ol > li {
-    position: relative;
-    float: left;
-    list-style-type: none;
-    display: inline;
-  }
-  #BreadCrumb ol > li > a {
-    height: 50px;
-  }
-  #BreadCrumb ol > li > a > span {
-    float: left;
-    background-image: none;
-    margin-right: 0;
-    padding: 16px 16px 16px 30px;
-    width: 100%;
-    font-size: 14px;
-  }
-  #BreadCrumb ol > li:last-child > a > span {
-    background-image: none;
-    font-size: 14px;
-    margin: 0;
-    padding: 16px 16px 16px 30px;
-    width: 100%;
-  }
-  #BreadCrumb .bcarrow {
-    border-bottom: 25px solid transparent;
-    border-left: 17px solid #283643;
-    border-top: 25px solid transparent;
-    right: -17px;
-  }
-
-/* @end */
-  /*
-    #navbutton #navbuttonLabel { background-image: none; padding:0;}
-    */
   #navbutton label[for="LeftMenuCheckbox"] {
-    background-image: url("/images/kog2014/menu-stripes.png");
-    background-position: 9px center;
-    background-repeat: no-repeat;
-    background-size: 14px;
     padding: 9px 10px 9px 35px;
     color: white;
     display: block;
@@ -1583,69 +1537,18 @@ label {
    
     height: auto;
   }
-
-  /* Header */
-  .topimageoverlay,
-  .topimageoverlaysubpage {
-    height: 50px;
-  }
-   #portal-logo{
-    top: 51px;
-    width: 390px;
-    background-size: 390px 150px;
-  }
- #portal-logoimg {
-    left: 90px;
-    width: 153px;
-    height: auto;
-  }
-  .topimageoverlaysubpage#portal-logo{
-    top: 45px;
-  }
-  /* intropage */
-  .intropageboxes {
-    padding: 0 80px;
-  }
-  .bottomButton {
-    font-size: 16px;
-  }
-  .footermaintext {
-    font-size: 24px;
-  }
-  .additionalboxes .contentwrapper {
-    padding: 0 80px;
-  }
-  /* DesctopCol3*/
-  .desktop3col .boxcontent > img {
-    width: 382px;
-  }
-  /* Breadcrumb */
-  #BreadCrumb {
-    font-size: 14px;
-    height: 50px;
-    top: -14px;
-  }
-  #BreadCrumb ol > li > a {
-    height: 50px;
-  }
-  #BreadCrumb .bcarrow {
-    border-bottom: 25px solid transparent;
-    border-left: 17px solid #283643;
-    border-top: 25px solid transparent;
-    right: -17px;
-  }
-  
-
-  
 }
+  
+
+
 /* @group leftmenu */
 
-/* LeftMenu */
 
 div#leftMenuOuterWrapper {
 	display: none;
 	height:  1800px;
 	width: 500px;
+	max-width: 100%;
 	background: whitesmoke;
 	position: absolute;
 	z-index:19;
@@ -1763,4 +1666,11 @@ div#somethingleft i {
 	margin-right: 10px;
 }
 
+
+#navbuttonLabel.onlymobile i {
+	font-size: 230%;
+}
+
+
 /* @end */
+
