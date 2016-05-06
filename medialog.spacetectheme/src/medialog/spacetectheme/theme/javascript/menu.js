@@ -1,38 +1,48 @@
 
 $(document).ready(function () {
 
-    $('#LeftMenuWrapper .navTreeLevel0 a.contenttype-folder').click(function (event) {
+
+    $('a.nextlevel').click(function (event) {
         event.preventDefault();
+    });
+
+    $('.navTreeLevel0 a.nextlevel').click(function () {
         $(".navTreeLevel0 > li").addClass("hidden");
         $(this).parent().removeClass("hidden");
         $(this).parent().addClass("selected");
- 
+        $(".selected").removeClass("hidden");
     });
 
-    $('#LeftMenuWrapper .navTreeLevel1 a.contenttype-folder').click(function (event) {
-        event.preventDefault();
+
+    $('.navTreeLevel1 a.nextlevel').click(function () {
         $(".navTreeLevel1 > li").addClass("hidden");
         $(this).parent().removeClass("hidden");
         $(this).parent().addClass("selected");
         $(".selected").removeClass("hidden");
- 
     });
 
-    $('#LeftMenuWrapper .navTreeLevel2 a.contenttype-folder').click(function (event) {
-        event.preventDefault();
+    $('.navTreeLevel2 a.nextlevel').click(function () {
         $(".navTreeLevel2 > li").addClass("hidden");
         $(this).parent().removeClass("hidden");
         $(this).parent().addClass("selected");
         $(".selected").removeClass("hidden");
     });
 
-    $('#LeftMenuWrapper .navTreeLevel3 a.contenttype-folder').click(function (event) {
+    $('.navTreeLevel3 a.nextlevel').click(function () {
         $(".navTreeLevel3 > li").addClass("hidden");
         $(this).parent().removeClass("hidden");
         $(".hidden .selected").removeClass("hidden");
         $(this).parent().addClass("selected");
- 
     });
+    
+    
+    $('.navTreeLevel4 a.nextlevel').click(function () {
+        $(".navTreeLevel4 > li").addClass("hidden");
+        $(this).parent().removeClass("hidden");
+        $(".hidden .selected").removeClass("hidden");
+        $(this).parent().addClass("selected");
+    });
+
 
     $('#navbuttonLabel label, .closeMenu').click(function () {
         $('#leftMenuOuterWrapper').toggle();

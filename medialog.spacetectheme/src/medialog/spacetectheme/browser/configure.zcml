@@ -3,6 +3,17 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="medialog.spacetectheme">
+    
+
+  <browser:page
+  	for="*"
+  	name="menusitemap"
+  	class=".menu_sitemap.SitemapView"
+  	template="sitemap.pt"
+  	permission="zope.Public"
+  	allowed_interface="Products.CMFPlone.browser.interfaces.ISitemapView"
+  	/>
+
 
   <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
   <include package="z3c.jbot" file="meta.zcml" />

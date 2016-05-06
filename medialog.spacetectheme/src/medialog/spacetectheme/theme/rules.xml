@@ -32,7 +32,7 @@
   		<replace css:theme="#above-content" css:content="#viewlet-above-content"/>
   		
   		<!-- sitemap for navigation -->
-  		<replace css:theme="#portal-sitemap"    css:content="#portal-sitemap"     href="/@@sitemap" /> 
+  		<replace css:theme="#portal-sitemap"    css:content="#portal-sitemap"     href="/@@menusitemap" /> 
   		
   		<!-- move search box -->
  		<!--drop css:content=".searchButton" /-->

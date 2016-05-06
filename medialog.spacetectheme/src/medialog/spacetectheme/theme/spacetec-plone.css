@@ -2627,6 +2627,7 @@ body.template-logged_out #content-core .portletFooter {
   margin: 12px 0 12px 12px;
   border-radius: 4px;
   overflow: hidden;
+  display: none;
 }
 .cal_month {
   background: #db6365;
