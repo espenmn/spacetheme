@@ -43,7 +43,6 @@ setup(
         'medialog.iconpicker',
         'plone.api',
 		'plone.app.contentlisting',
-		'plone.app.mosaic',
 		'medialog.leadimagesize',
         'plone.app.theming',
         'plone.app.themingplugins',

@@ -1,13 +1,5 @@
-/* @override http://localhost:8080/Plone6y/++theme++medialog.spacetectheme/spacetec2016.css */
+/* @override http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css */
 
-/* @override 
-	http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
-	http://localhost:8080/Spcetec/++theme++medialog.spacetectheme/spacetec2016.css
-	http://localhost:8080/Plone6y/++theme++medialog.spacetectheme/spacetec2016.css
-*/
-  
-
-  
 .managePortletsFallback,
 .hiddenStructure,
 .hidden {
@@ -185,6 +177,10 @@ h2,
   text-decoration: none;
 }
 
+h1.documentFirstHeading {
+	margin-bottom: 0.6em	
+}
+
 #portal-footer-wrapper .portletHeader,
 aside#portal-column-two .portletHeader,
 #viewlet-below-content .portletHeader,
@@ -330,6 +326,12 @@ img {
   border: none;
 }
 
+footer img.image-icon {
+	display: none;
+}
+ 
+
+
 figure.image-product {
 	margin-left: 0;
 	margin-right: 0;
@@ -351,10 +353,14 @@ p {
   margin-left: 0;
 }
 
+strong {
+	font-weight: bold;
+}
 
 div.documentDescription.description  {
 	font-weight: 600;
 	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 .portlet ul li a.tile {
@@ -380,7 +386,7 @@ a:visited {
 
 }
 
-.documentByLine {
+.userrole-manager .documentByLine {
 	margin:  5px 0;;
     background: #eee;
     font-size: 10px;
@@ -420,6 +426,7 @@ a:visited {
  
   margin: 0 auto;
   position: relative;
+ 
 }
 
 #portal-footer div.row div.col-xs-12 ,
@@ -676,6 +683,29 @@ clear: both;
   font-size: 12px;
 }
 
+
+
+
+article.tileItem {
+  padding-bottom: 33px;
+  display: block;
+  clear: both;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAADCAYAAACJZs+gAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0QzUwNzYxMjdGQjIxMUU0QTA0OUQ5RTYwOTg0MTk3MyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0QzUwNzYxMzdGQjIxMUU0QTA0OUQ5RTYwOTg0MTk3MyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjRDNTA3NjEwN0ZCMjExRTRBMDQ5RDlFNjA5ODQxOTczIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjRDNTA3NjExN0ZCMjExRTRBMDQ5RDlFNjA5ODQxOTczIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+lrbj6AAAADNJREFUeNpiZGBgsIDiE////z/BAAWMjIxUEWeCCgpAaWRAFXGQBSDbPkBpZEAVcYAAAwAjAyADyfgHowAAAABJRU5ErkJggg==");
+  background-repeat: repeat-x;
+  padding-bottom: 28px;
+   padding-top: 15px;
+  background-position: top;
+ 
+
+}
+
+ 
+article.tileItem:first-child {
+  background-image: none;
+margin-top: 1em;
+
+}
+
 #content-core article.tileItem div.tileImage {
 	margin: 0 0 0.5em 2em;
 }
@@ -713,6 +743,15 @@ a.link-overlay  {
 	top:  0;
 	left: 0;
 }
+
+
+a.summary.url,
+.eventtitle a {
+  font-size: 20px;
+  color: #4c4c4c;
+  text-decoration: none;
+}
+
 
 
 a.summary.url,
@@ -867,7 +906,7 @@ span#breadcrumbs-current,
   
 }
  
-@media (max-width: 800px)  {
+@media (max-width: 900px)  {
 	
 #portal-breadcrumbs li a {
 	font-size: 0;
@@ -977,7 +1016,7 @@ li#breadcrumbs-3 {
   }
   /* For this Resolution  */
   .contentwrapper {
-    width: 700px;
+    width: 95%;
   }
   
 #portal-footer div.row div.col-xs-12 ,
