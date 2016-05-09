@@ -10,8 +10,6 @@
    addview="medialog.spacetectheme.portlet.SocialPortlet"
    title="Social Links in Portlet"
    description="Adds social links in a  portlety"
-   i18n:attributes="title;
-    description"
    />
 
 </portlets>
