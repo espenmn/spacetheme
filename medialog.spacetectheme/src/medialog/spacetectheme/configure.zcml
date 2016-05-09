@@ -13,6 +13,7 @@
   <i18n:registerTranslations directory="locales" />
   <includeDependencies package="." />
   <include package=".browser" />
+   <include package="plone.app.portlets"/>
 
   <plone:static
       directory="theme"
@@ -51,4 +52,20 @@
         permission="zope.Public"
     />
 
+     <permission
+       id="medialog.spacetectheme.portlet.socialportlet.SocialPortlet"
+       title="medialog.spacetectheme: Add social portlet"
+       />
+
+     <!-- Register the portlet -->
+     <plone:portlet
+         name="medialog.spacetectheme.portlet.SocialPortlet"
+         interface=".portlet.portlet.ISocialPortlet"
+         assignment=".portlet.portlet.Assignment"
+         view_permission="zope2.View"
+         renderer=".portlet.portlet.Renderer"
+         addview=".portlet.portlet.AddForm"
+         editview=".portlet.portlet.EditForm"
+         />
+         
 </configure>

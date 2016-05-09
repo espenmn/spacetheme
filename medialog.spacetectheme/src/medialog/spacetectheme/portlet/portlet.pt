@@ -1,0 +1,15 @@
+<dl class="portlet portletSocialPortlet"
+    tal:define="portal_url context/@@plone_portal_state/portal_url;"
+    i18n:domain="medialog.spacetectheme">
+
+  <dt class="portletHeader">
+    <span class="portletTopLeft"></span>
+    <span tal:condition="view/title" tal:content="view/title">
+      Social Portlet
+    </span>
+    <span class="portletTopRight"></span>
+  </dt>
+  <dd class="portletItem odd">
+ 	All links here
+  </dd>
+</dl>
