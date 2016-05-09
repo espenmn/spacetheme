@@ -181,7 +181,8 @@ h2,
 }
 
 h1.documentFirstHeading {
-	margin-bottom: 0.6em	
+	margin-bottom: 0.6em	;
+	line-height: 35px;
 }
 
 #portal-footer-wrapper .portletHeader,
@@ -464,6 +465,37 @@ ul.doublearrow,
   padding-bottom: 20px;
  
 }
+nav#category.documentByLine ul {
+	padding-left: 0;
+}
+nav#category.documentByLine li {
+	list-style-image: none;
+	list-style-type: none;
+	margin-left: 0;
+}
+
+#relatedItemBox {
+	
+}
+
+#relatedItemBox  a {
+	font-weight: 600;
+	text-decoration: none;
+}
+
+#relatedItemBox  span.discreet {
+	
+}
+
+#relatedItemBox  header,
+span#categories-filed-under {
+	margin-top: 3em;
+	font-weight: 600;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #333;
+}
+
+
 
 .portlet ul li {
 	padding-bottom: 10px;
@@ -1432,7 +1464,7 @@ li#breadcrumbs-3 {
 @media (min-width: 1001px) {
   /* For this Resolution */
   .contentwrapper {
-    width: 980px;
+    width: 90%;
   }
 
   #portal-footer div.row div.col-xs-12 
