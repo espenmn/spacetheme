@@ -14,9 +14,9 @@
     </span>
     <span class="portletTopRight"></span>
   </dt>
-  <dd class="portletItem odd"><a target="_blank" href="facebook" tal:attributes="href facebook"><i class="fa fa-facebook"></i> facebook</a></dd>	
-  <dd class="portletItem even"><a target="_blank" href="twitter"  tal:attributes="href twitter"><i class="fa fa-twitter"></i> twitter</a></dd>
-  <dd class="portletItem odd"><a target="_blank" href="instagram" tal:attributes="href instagram"><i class="fa fa-instagram"></i> instagram</a></dd>
+  <dd tal:condition="facebook" class="portletItem odd"><a target="_blank" href="facebook" tal:attributes="href facebook"><i class="fa fa-facebook"></i> facebook</a></dd>	
+  <dd tal:condition="twitter" class="portletItem even"><a target="_blank" href="twitter"  tal:attributes="href twitter"><i class="fa fa-twitter"></i> twitter</a></dd>
+  <dd tal:condition="instagram"  class="portletItem odd"><a target="_blank" href="instagram" tal:attributes="href instagram"><i class="fa fa-instagram"></i> instagram</a></dd>
   <dd class="portletItem even"><a target="_blank" href="https://www.linkedin.com/company/kongsberg-spacetec-as"><i class="fa fa-linkedin"></i> linkedin</a>	</dd> 
  
 </dl>
