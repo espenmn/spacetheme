@@ -11,7 +11,11 @@
 	display: none;
 }
 
- 
+
+#content   nav.pagination ul li::before{
+	display: none;
+}
+
 
 /*Framework */
 body {
@@ -543,6 +547,7 @@ ul.doublearrow li:before {
 	font: 1.2em FontAwesome;
 }
 
+ 
 #content-core #portal-sitemap li,
 #content-core #portal-sitemap ul {
 	padding-bottom: 2px;
