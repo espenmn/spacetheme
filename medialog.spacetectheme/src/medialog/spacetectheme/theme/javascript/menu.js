@@ -1,6 +1,10 @@
 
 $(document).ready(function () {
 
+    $('.searchboks a').click(function (event) {
+        event.preventDefault();
+        $('#modalsearch1').toggleClass('hidden');
+    });
 
     $('a.nextlevel').click(function (event) {
         event.preventDefault();

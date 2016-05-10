@@ -74,15 +74,38 @@ div.outer-wrapper {
 		background-color: #efefef;
 		height: auto;
 		display: block;
+}
+
+div.LSBox {
+	display: flex;
+
+}
+
+
+div#modalsearch1 {
+ margin-left: auto;
+	position: absolute;
+	background: white;
+	padding: 4px 4px 0 4px;;
+	border:  1px solid #293543;
+ 	height: 44px;
+ 	right: 0px;
+ 	top:  0px;
 } 
+
+
 
 input#searchGadget.searchField ,
 input.searchPage.form-control {
-	font-size: 22px;
-	padding:5px 10px;
+	font-size: 20px;
+	padding:4px 10px;
+	border:  0 none!important;
+	background: whitesmoke;
+
 }
 input#searchGadget.searchField {
 	width: 76%;
+	float: left;
 }
  
 
@@ -97,7 +120,10 @@ input.searchButton {
 	 background: #DDD;
 	 border:  0 none;;
 	 font-size: 1.4em;
-	 margin: 3px;	 
+	 margin-left : 1px;
+	 padding: 1px 15px;
+	 font-size: 17px;
+	 line-height: 30px;
 }
 
 ul.livesearch-results {
@@ -113,11 +139,11 @@ ul.livesearch-results {
 	background:  #CCC;
 	text-align: center;
 	margin: 2px 2px 2px  auto;;
-	overflow: hidden;
 }
 
  
 .searchboks a {
+	width: 50px;
 	color: white;
 	font-size: 38px;
 	line-height: 49px;
@@ -130,6 +156,7 @@ div#above-content-wrapper {
 	background-color: #283643;
 	height: 50px;
 	overflow: hidden;
+	position: relative;
 }
 
 #LeftMenuWrapper  div {
