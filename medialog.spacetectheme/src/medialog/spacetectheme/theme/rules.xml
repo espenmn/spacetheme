@@ -39,6 +39,10 @@
  		<drop css:content=".searchSection" />
  		<replace  css:theme-children="#portal-searchbox"   css:content-children="#portal-searchbox"  />
 
+  		<!-- social top -->
+ 		<replace  css:theme-="#socialtop"   css:content="#socialtop"  ref="/@@theme-fragment/socialtop"  />
+ 		
+ 		
 		  <!-- Central column -->
 		  <replace css:theme="#content-container" method="raw">
 

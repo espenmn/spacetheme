@@ -1,0 +1,12 @@
+<div id="socialtop" class="social"
+	tal:define="email python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.email'] or '';
+	twitter python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.twitter'] or '';
+	facebook python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.facebook'] or '';
+	instagram python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.instagram'] or '';
+	phone python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.phone'] or None">
+	
+				<a target="_blank" href="facebook" tal:attributes="href facebook"><i class="fa fa-facebook"></i> facebook</a>
+				<a target="_blank" href="twitter"  tal:attributes="href twitter"><i class="fa fa-twitter"></i> twitter</a>
+				<a target="_blank" href="instagram" tal:attributes="href instagram"><i class="fa fa-instagram"></i> instagram</a>
+				<a target="_blank" href="https://www.linkedin.com/company/kongsberg-spacetec-as"><i class="fa fa-linkedin"></i> linkedin</a>			
+</div>

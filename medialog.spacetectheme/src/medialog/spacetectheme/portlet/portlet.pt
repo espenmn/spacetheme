@@ -1,6 +1,11 @@
 <dl class="portlet portletSocialPortlet"
-    tal:define="portal_url context/@@plone_portal_state/portal_url;"
-    i18n:domain="medialog.spacetectheme">
+    tal:define="portal_url context/@@plone_portal_state/portal_url;
+        		email python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.email'] or '';
+    			twitter python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.twitter'] or '';
+				facebook python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.facebook'] or '';
+				instagram python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.instagram'] or '';
+				phone python:context.portal_registry['medialog.bergensiana.interfaces.IBergensianaSettings.phone'] or None"
+				i18n:domain="medialog.spacetectheme">
 
   <dt class="portletHeader">
     <span class="portletTopLeft"></span>

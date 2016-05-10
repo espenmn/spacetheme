@@ -4,5 +4,6 @@
   <dependencies>
     <dependency>profile-plone.app.theming:default</dependency>
     <dependency>profile-medialog.iconpicker:default</dependency>
+    <dependency>profile-medialog.bergensiana:only_settings</dependency>
   </dependencies>
 </metadata>
