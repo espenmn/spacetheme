@@ -15,6 +15,11 @@
     <span class="portletTopRight"></span>
   </dt>
   <dd class="portletItem odd">
- 	All links here
+				<p><a target="_blank" href="facebook" tal:attributes="href facebook"><i class="fa fa-facebook"></i> facebook</a></p>
+				<p><a target="_blank" href="twitter"  tal:attributes="href twitter"><i class="fa fa-twitter"></i> twitter</a></p>
+				<p><a target="_blank" href="instagram" tal:attributes="href instagram"><i class="fa fa-instagram"></i> instagram</a></p>
+				<p><a target="_blank" href="https://www.linkedin.com/company/kongsberg-spacetec-as"><i class="fa fa-linkedin"></i> linkedin</a>	</p>
+				<p><a tal:define="post python:'mailto:' + email" href="post" tal:attributes="href post"><i class="fa fa-envelope"></i></a></p>
+				<p><a href="https://support.spacetec.no/index.php" class="supportweb"><i class="fa fa-support"></i><span class="notmobile">Supportweb</span></a></p>
   </dd>
 </dl>
