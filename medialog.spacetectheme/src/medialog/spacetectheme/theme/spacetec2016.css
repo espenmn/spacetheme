@@ -11,6 +11,11 @@
 	display: none;
 }
 
+  #viewlet-below-content .portletWrapper:last-child section.portlet {
+    padding-right: 0;
+
+  }
+
 
 #content   nav.pagination ul li::before{
 	display: none;
@@ -1543,6 +1548,8 @@ li#breadcrumbs-3 {
     padding-left: 2.5%;
     margin-left: 2.5%;
   }
+
+
 
 
 	#viewlet-below-content div:first-child .portlet,
