@@ -1,3 +1,5 @@
+/* @override http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css */
+
 /* @override 
 	http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
 	http://localhost:8080/www/++theme++xxx/spacetec2016.css
@@ -111,6 +113,7 @@ ul.livesearch-results {
 	background:  #CCC;
 	text-align: center;
 	margin: 2px 2px 2px  auto;;
+	overflow: hidden;
 }
 
  
@@ -119,6 +122,7 @@ ul.livesearch-results {
 	background:  #CCC;
 	font-size: 38px;
 	line-height: 49px;
+	text-decoration: none;
 	
 }
 
@@ -602,6 +606,30 @@ table {
 margin-bottom: 40px;	
 
 }
+
+
+.portletSocialPortlet a {
+	text-decoration: none;
+}
+
+.portletSocialPortlet dt {
+	margin-bottom: 30px;
+}
+.portletSocialPortlet dd.odd,
+.portletSocialPortlet dd.even {
+	margin-top: 10px;
+	font-weight: 600;
+	font-size: 120%;
+	margin-left: 0;
+	text-align: left;
+	clear: both;
+}
+.portletSocialPortlet dd i {
+	color: white;
+	text-align: center;
+	padding: 4px;
+}
+
 
 a.supportweb {
 	text-decoration: underline;
