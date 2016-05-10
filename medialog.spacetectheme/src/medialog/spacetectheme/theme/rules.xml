@@ -40,7 +40,7 @@
  		<replace  css:theme-children="#portal-searchbox"   css:content-children="#portal-searchbox"  />
 
   		<!-- social top -->
- 		<replace  css:theme-="#socialtop"   css:content="#socialtop"  ref="/@@theme-fragment/socialtop"  />
+ 		<replace  css:theme-children-="#socialtop"   css:content-children="#socialtop"  href="/@@theme-fragment/socialtop"  />
  		
  		
 		  <!-- Central column -->
