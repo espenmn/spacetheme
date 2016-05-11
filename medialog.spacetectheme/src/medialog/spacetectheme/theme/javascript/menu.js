@@ -1,6 +1,9 @@
-
+var level = 0;
+    
 $(document).ready(function () {
 
+
+        
     $('.searchboks a').click(function (event) {
         event.preventDefault();
         $('#modalsearch1').toggleClass('hidden');
@@ -8,6 +11,8 @@ $(document).ready(function () {
 
     $('a.nextlevel').click(function (event) {
         event.preventDefault();
+   		level++;
+        $('#somethingleft i').show();
     });
 
     $('.navTreeLevel0 a.nextlevel').click(function () {
@@ -57,6 +62,11 @@ $(document).ready(function () {
     $('#somethingleft i').click(function () {
         $("li.hidden").removeClass("hidden")
         $(".selected").removeClass("selected");
+        level = level - 1;
+        $('#somethingleft i').hide();
+        if (level = 1) { 
+            $('#somethingleft i').hide();
+        }
     });
 
 

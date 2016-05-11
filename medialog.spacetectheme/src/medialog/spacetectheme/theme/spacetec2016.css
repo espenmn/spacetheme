@@ -1747,7 +1747,7 @@ div#somethingleft {
  }
 
 div#somethingleft i {
- 
+ 	display:  none;
 	text-align: center;
   color:  black;
   font: 1.8em FontAwesome;
