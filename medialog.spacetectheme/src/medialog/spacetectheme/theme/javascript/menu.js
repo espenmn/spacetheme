@@ -10,12 +10,12 @@ $(document).ready(function () {
     $('a.nextlevel').click(function (event) {
         event.preventDefault();
    		lev = level.toString(); 
-        selektor = '.navTreeLevel' + lev + ' li, .navTreeLevel0  li';
+        selektor = '.navTreeLevel' + lev + ' > li, .navTreeLevel0 > li';
         level++;
         $('#somethingleft i').show();
         $(selektor).addClass('hidden');
         $(this).parent().addClass('selected');
-        $('.selected, selected > li, li.selected,  .selected > ul > li').removeClass('hidden');
+        $('.selected').removeClass('hidden');
     });
 
    
@@ -28,7 +28,7 @@ $(document).ready(function () {
     $('#somethingleft i').click(function () {
         lev = level.toString(); 
         level = level - 1;
-        selektor = '.navTreeLevel' + lev + ' li.hidden';
+        selektor = '.navTreeLevel' + lev + ' > li.hidden';
         $('li').removeClass("hidden")
         $('li').removeClass("selected");
         $('#somethingleft i').hide();
