@@ -25,7 +25,7 @@
 
     <div id="content-core">
         <ul id="portal-sitemap"
-            class="navTreeLevel0 visualNoMarker">
+            class="navTreeLevel1 visualNoMarker">
             <tal:sitemap replace="structure view/createSiteMap" />
         </ul>
     </div>

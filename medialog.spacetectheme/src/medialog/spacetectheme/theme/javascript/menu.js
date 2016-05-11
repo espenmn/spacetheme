@@ -1,4 +1,4 @@
-var level = 0;
+var level = 1;
     
 $(document).ready(function () {
 
@@ -10,13 +10,12 @@ $(document).ready(function () {
     $('a.nextlevel').click(function (event) {
         event.preventDefault();
    		lev = level.toString(); 
-        selektor = '.navTreeLevel' + lev + ' > li';
+        selektor = '.navTreeLevel' + lev + ' li, .navTreeLevel0  li';
         level++;
         $('#somethingleft i').show();
         $(selektor).addClass('hidden');
-        $(this).parent().removeClass('hidden');
         $(this).parent().addClass('selected');
-        $('.selected').removeClass('hidden');
+        $('.selected, selected > li, li.selected,  .selected > ul > li').removeClass('hidden');
     });
 
    
@@ -27,9 +26,11 @@ $(document).ready(function () {
     });
 
     $('#somethingleft i').click(function () {
-        $("li.hidden").removeClass("hidden")
-        $(".selected").removeClass("selected");
+        lev = level.toString(); 
         level = level - 1;
+        selektor = '.navTreeLevel' + lev + ' li.hidden';
+        $('li').removeClass("hidden")
+        $('li').removeClass("selected");
         $('#somethingleft i').hide();
         if (level = 1) { 
             $('#somethingleft i').hide();
