@@ -28,7 +28,7 @@ class ISliderPortlet(IPortletDataProvider):
         required=True, 
     )
 
-    sort_on = schema.Choice(
+    sorton = schema.Choice(
             title=_(u"Sort Tags on"),
             values=(
                 "sortable_title",
@@ -40,7 +40,7 @@ class ISliderPortlet(IPortletDataProvider):
             ),
     )
     
-    sort_order = schema.Choice(
+    sortorder = schema.Choice(
             title=_(u"Sort Order"),
             values=(
                 "ascending",
@@ -56,12 +56,17 @@ class Assignment(base.Assignment):
     """
 
     implements(ISliderPortlet)
-
+    
     header = u""
    
-    def __init__(self, header=u""):
+   
+    def __init__(self, header=u"",  tags='', sorton='', sortorder=''):
         self.header = header
-        
+        self.sorton = sorton
+        self.sortorder = sortorder
+        self.tags = tags
+
+    
     @property
     def title(self):
         """This property is used to give the title of the portlet in the
@@ -74,26 +79,31 @@ class Renderer(base.Renderer):
 
     _template = ViewPageTemplateFile('sliderportlet.pt')
     render = _template
+    
 
+    def __init__(self, *args):
+        base.Renderer.__init__(self, *args)
 
+    @property
     def get_images(self):
+        import pdb; pdb.set_trace()
         tags = self.tags
+        sorton = self.sorton
+        sortorder = self.sortorder
         catalog = api.portal.get_tool(name='portal_catalog')
-        tagged_images = catalog(portal_type='Image', Subject=tags, sort_on=self.sort_on, sort_order=self.sort_order)
+        tagged_images = catalog(portal_type='Image', Subject=tags, sorton=self.sorton, sortorder=self.sortorder)
         return [image.getObject()for image in tagged_images]
-        
+
+    @property        
     def get_image_list(self):
         if hasattr(self, 'images') and type(self.images) == list:
             return [{'url': image.absolute_url(), 'title': image.Title(), 'description': image.Description() } for image in self.images]
         else:
             return []
 
+    @property        
     def hasImages(self):
         return ( len(self.get_images) > 0 )
-        
-    
-    def __init__(self, *args):
-        base.Renderer.__init__(self, *args)
 
 
 class AddForm(formhelper.AddForm):

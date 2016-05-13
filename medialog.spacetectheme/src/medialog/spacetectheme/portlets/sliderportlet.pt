@@ -3,7 +3,9 @@
         		i18n:domain="medialog.spacetectheme">
  
 <dd>
- <tal:slider tal:condition="view/hasImages">
+
+<div tal:content="view/getImages" />
+ <!--tal:slider tal:condition="view/getImages">
   <ul id="slider" class="slider" >
 	<li tal:repeat="image_list view/image_list">
 		<img src="" alt=""
@@ -16,6 +18,6 @@
 		</span>
 	</li>
   </ul>
- </tal:slider>
+ </tal:slider-->
 </dd>
 </dl>
