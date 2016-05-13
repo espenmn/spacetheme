@@ -4,10 +4,9 @@
  
 <dd>
 
-<div tal:content="view/data/get_images" />
- <!--tal:slider tal:condition="view/getImages">
+ <tal:slider tal:condition="view/data/hasImages">
   <ul id="slider" class="slider" >
-	<li tal:repeat="image_list view/image_list">
+	<li tal:repeat="image_list view/data/get_image_list">
 		<img src="" alt=""
 		    tal:define="image_path python: image_list['url'] + '/image_large';
 		    			image_title python: image_list['title'] "  
@@ -18,6 +17,6 @@
 		</span>
 	</li>
   </ul>
- </tal:slider-->
+ </tal:slider>
 </dd>
 </dl>
