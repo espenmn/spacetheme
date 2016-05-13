@@ -82,5 +82,5 @@
          addview=".portlets.sliderportlet.AddForm"
          editview=".portlets.sliderportlet.EditForm"
          />
-         
+                  
 </configure>

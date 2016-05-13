@@ -60,11 +60,12 @@ class Assignment(base.Assignment):
     header = u""
    
    
-    def __init__(self, header=u"",  tags='', sorton='', sortorder=''):
+    def __init__(self, header=u"",  tags='', sorton='', sortorder='', get_images=None):
         self.header = header
         self.sorton = sorton
         self.sortorder = sortorder
         self.tags = tags
+        self.get_images = get_images
 
     
     @property
