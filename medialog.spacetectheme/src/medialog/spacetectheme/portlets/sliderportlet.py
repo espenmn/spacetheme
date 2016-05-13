@@ -29,7 +29,7 @@ class ISliderPortlet(IPortletDataProvider):
         required=True, 
     )
 
-    sorton = schema.Choice(
+    sort_on = schema.Choice(
             title=_(u"Sort Tags on"),
             values=(
                 "sortable_title",
@@ -41,7 +41,7 @@ class ISliderPortlet(IPortletDataProvider):
             ),
     )
     
-    sortorder = schema.Choice(
+    sort_order = schema.Choice(
             title=_(u"Sort Order"),
             values=(
                 "ascending",
@@ -61,10 +61,10 @@ class Assignment(base.Assignment):
     header = u""
    
    
-    def __init__(self, header=u"",  tags='', sorton='', sortorder='', get_images=None):
+    def __init__(self, header=u"",  tags='', sort_on='', sort_order='', get_images=None):
         self.header = header
-        self.sorton = sorton
-        self.sortorder = sortorder
+        self.sort_on = sort_on
+        self.sort_order = sort_order
         self.tags = tags
         self.get_images = get_images
 
@@ -89,10 +89,10 @@ class Renderer(base.Renderer):
 
     def get_images(self):
         tags = self.data.tags
-        sorton = self.data.sorton
-        sortorder = self.data.sortorder
+        sort_on = self.data.sort_on
+        sort_order = self.data.sort_order
         catalog = api.portal.get_tool(name='portal_catalog')
-        tagged_images = catalog(portal_type='Image', Subject=tags, sorton=sorton, sortorder=sortorder)
+        tagged_images = catalog(portal_type='Image', Subject=tags, sort_on=sort_on, sort_order=sort_order)
         return [image for image in tagged_images]
    
     def get_image_list(self):
