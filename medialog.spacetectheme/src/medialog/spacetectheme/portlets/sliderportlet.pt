@@ -1,0 +1,21 @@
+<dl class="portlet portletSliderPortlet"
+    tal:define="portal_url context/@@plone_portal_state/portal_url;"
+        		i18n:domain="medialog.spacetectheme">
+ 
+<dd>
+ <tal:slider tal:condition="view/hasImages">
+  <ul id="slider" class="slider" >
+	<li tal:repeat="image_list view/image_list">
+		<img src="" alt=""
+		    tal:define="image_path python: image_list['url'] + '/image_large';
+		    			image_title python: image_list['title'] "  
+		    tal:attributes="src image_path; alt image_title"/>
+		<span class="slidetext">
+		<p class="slidedescription" 
+			tal:content="python:  image_list['description']"/>
+		</span>
+	</li>
+  </ul>
+ </tal:slider>
+</dd>
+</dl>

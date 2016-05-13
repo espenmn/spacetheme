@@ -48,7 +48,7 @@ class Assignment(base.Assignment):
 
 class Renderer(base.Renderer):
 
-    _template = ViewPageTemplateFile('portlet.pt')
+    _template = ViewPageTemplateFile('socialportlet.pt')
     render = _template
 
     def __init__(self, *args):

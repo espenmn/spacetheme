@@ -53,19 +53,34 @@
     />
 
      <permission
-       id="medialog.spacetectheme.portlet.socialportlet.SocialPortlet"
+       id="medialog.spacetectheme.portlets.socialportlet.SocialPortlet"
        title="medialog.spacetectheme: Add social portlet"
        />
 
-     <!-- Register the portlet -->
+     <permission
+       id="medialog.spacetectheme.portlets.sliderportlet.SliderPortlet"
+       title="medialog.spacetectheme: Add slider portlet"
+       />
+
+     <!-- Register the portlets -->
      <plone:portlet
-         name="medialog.spacetectheme.portlet.SocialPortlet"
-         interface=".portlet.portlet.ISocialPortlet"
-         assignment=".portlet.portlet.Assignment"
+         name="medialog.spacetectheme.portlets.SocialPortlet"
+         interface=".portlets.socialportlet.ISocialPortlet"
+         assignment=".portlets.socialportlet.Assignment"
          view_permission="zope2.View"
-         renderer=".portlet.portlet.Renderer"
-         addview=".portlet.portlet.AddForm"
-         editview=".portlet.portlet.EditForm"
+         renderer=".portlets.socialportlet.Renderer"
+         addview=".portlets.socialportlet.AddForm"
+         editview=".portlets.socialportlet.EditForm"
+         />
+         
+     <plone:portlet
+         name="medialog.spacetectheme.portlets.SliderPortlet"
+         interface=".portlets.sliderportlet.ISliderPortlet"
+         assignment=".portlets.sliderportlet.Assignment"
+         view_permission="zope2.View"
+         renderer=".portlets.sliderportlet.Renderer"
+         addview=".portlets.sliderportlet.AddForm"
+         editview=".portlets.sliderportlet.EditForm"
          />
          
 </configure>

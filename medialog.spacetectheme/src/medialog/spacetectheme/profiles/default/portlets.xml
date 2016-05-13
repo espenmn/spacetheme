@@ -7,11 +7,17 @@
    />
  
  <portlet
-   addview="medialog.spacetectheme.portlet.SocialPortlet"
+   addview="medialog.spacetectheme.portlets.SliderPortlet"
+   title="Spacetec slider Portlet"
+   description="Images and text sliding"
+   />
+
+ <portlet
+   addview="medialog.spacetectheme.portlets.SocialPortlet"
    title="Social Links in Portlet"
    description="Adds social links in a  portlety"
    />
-
+   
 </portlets>
 
  
