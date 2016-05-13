@@ -9,11 +9,6 @@
         </tal:repeat>
     </div>
 
- 
-
-<link rel="stylesheet" href="++theme++medialog.spacetectheme/css/responsiveslides.css">
-<script src="++theme++medialog.spacetectheme/javascript/responsiveslides.min.js"></script>
-
 
 <script>$(function () {
     $("#slider").responsiveSlides({

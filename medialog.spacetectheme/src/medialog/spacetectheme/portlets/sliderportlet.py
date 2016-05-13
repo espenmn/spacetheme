@@ -76,12 +76,7 @@ class Assignment(base.Assignment):
         """
         return self.header
 
-    @property
-    def title(self):
-        """This property is used to give the title of the portlet in the
-        "manage portlets" screen. Here, we use the title that the user gave.
-        """
-        return self.header
+
 
 class Renderer(base.Renderer):
 
