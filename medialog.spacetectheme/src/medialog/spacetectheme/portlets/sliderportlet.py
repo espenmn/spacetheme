@@ -85,7 +85,6 @@ class Renderer(base.Renderer):
     def __init__(self, *args):
         base.Renderer.__init__(self, *args)
 
-    @property
     def get_images(self):
         import pdb; pdb.set_trace()
         tags = self.tags
@@ -94,15 +93,13 @@ class Renderer(base.Renderer):
         catalog = api.portal.get_tool(name='portal_catalog')
         tagged_images = catalog(portal_type='Image', Subject=tags, sorton=self.sorton, sortorder=self.sortorder)
         return [image.getObject()for image in tagged_images]
-
-    @property        
+   
     def get_image_list(self):
         if hasattr(self, 'images') and type(self.images) == list:
             return [{'url': image.absolute_url(), 'title': image.Title(), 'description': image.Description() } for image in self.images]
         else:
             return []
-
-    @property        
+  
     def hasImages(self):
         return ( len(self.get_images) > 0 )
 

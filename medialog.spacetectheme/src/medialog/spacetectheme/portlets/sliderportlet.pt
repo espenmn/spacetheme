@@ -5,7 +5,7 @@
 <dd>
 
 <div tal:content="view/getImages" />
- <!--tal:slider tal:condition="view/getImages">
+ <!--tal:slider tal:condition="view/data/getImages">
   <ul id="slider" class="slider" >
 	<li tal:repeat="image_list view/image_list">
 		<img src="" alt=""
