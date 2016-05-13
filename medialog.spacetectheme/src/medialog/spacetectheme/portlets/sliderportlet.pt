@@ -2,18 +2,17 @@
     tal:define="portal_url context/@@plone_portal_state/portal_url;"
         		i18n:domain="medialog.spacetectheme">
  
-<dd>
-
- <tal:slider tal:condition="view/data/hasImages">
+<dd> 
+ <tal:slider >
   <ul id="slider" class="slider" >
-	<li tal:repeat="image_list view/data/get_image_list">
+	<li tal:repeat="obj view/data/get_images">
 		<img src="" alt=""
-		    tal:define="image_path python: image_list['url'] + '/image_large';
-		    			image_title python: image_list['title'] "  
-		    tal:attributes="src image_path; alt image_title"/>
+		    tal:define="image_title obj/Title;
+		    image_url python:obj.getObject().absolute_url() + '/@@images/image/preview'"  
+		    tal:attributes="alt image_title; src image_url"/>
 		<span class="slidetext">
 		<p class="slidedescription" 
-			tal:content="python:  image_list['description']"/>
+			tal:content="obj/description"/>
 		</span>
 	</li>
   </ul>

@@ -98,14 +98,11 @@ class Renderer(base.Renderer):
         sortorder = self.data.sortorder
         catalog = api.portal.get_tool(name='portal_catalog')
         tagged_images = catalog(portal_type='Image', Subject=tags, sorton=sorton, sortorder=sortorder)
-        return [image.getObject()for image in tagged_images]
+        return [image for image in tagged_images]
    
     def get_image_list(self):
-        if hasattr(self, 'images') and type(self.images) == list:
-            return [{'url': image.absolute_url(), 'title': image.Title(), 'description': image.Description() } for image in self.images]
-        else:
-            return []
-  
+        return [{'url': image.absolute_url(), 'title': image.Title(), 'description': image.Description() } for image in self.get_images]
+        
     def hasImages(self):
         return ( len(self.get_images) > 0 )
 
