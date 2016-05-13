@@ -2,19 +2,18 @@
     tal:define="portal_url context/@@plone_portal_state/portal_url;"
         		i18n:domain="medialog.spacetectheme">
  
-<dd class="sliderportlet" >
-
- <tal:slider tal:repeat="obj view/get_images"> 
+<div  class="sliderportlet">
+<tal:repeat tal:repeat="obj view/get_images"> 
 		<img src="" alt=""
 		    class="slider-img img-responsive"
 		    tal:define="image_title obj/Title;
 		    image_url python:obj.getObject().absolute_url() + '/@@images/image/preview'"  
 		    tal:attributes="alt image_title; src image_url"/>
  
-		<p  tal:content="obj/description"/>
+		<!--p  tal:content="obj/description"/-->
 
- </tal:slider>
-</dd>
+</tal:repeat>
+</div>
 <script>$(function () {
     $(".sliderportlet").responsiveSlides({
     maxwidth: 768,
