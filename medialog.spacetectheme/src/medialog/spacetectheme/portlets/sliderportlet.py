@@ -7,6 +7,7 @@ from z3c.form import field
 from zope import schema
 from zope.interface import implements
 from zope.schema.fieldproperty import FieldProperty
+from plone import api
 
 
 from zope.i18nmessageid import MessageFactory
@@ -75,6 +76,12 @@ class Assignment(base.Assignment):
         """
         return self.header
 
+    @property
+    def title(self):
+        """This property is used to give the title of the portlet in the
+        "manage portlets" screen. Here, we use the title that the user gave.
+        """
+        return self.header
 
 class Renderer(base.Renderer):
 
@@ -86,12 +93,11 @@ class Renderer(base.Renderer):
         base.Renderer.__init__(self, *args)
 
     def get_images(self):
-        import pdb; pdb.set_trace()
-        tags = self.tags
-        sorton = self.sorton
-        sortorder = self.sortorder
+        tags = self.data.tags
+        sorton = self.data.sorton
+        sortorder = self.data.sortorder
         catalog = api.portal.get_tool(name='portal_catalog')
-        tagged_images = catalog(portal_type='Image', Subject=tags, sorton=self.sorton, sortorder=self.sortorder)
+        tagged_images = catalog(portal_type='Image', Subject=tags, sorton=sorton, sortorder=sortorder)
         return [image.getObject()for image in tagged_images]
    
     def get_image_list(self):
