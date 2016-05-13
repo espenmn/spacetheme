@@ -67,6 +67,7 @@ div.slidetext-container {
 	margin-bottom: 0.2em;
 }
 
+.sliderportlet ul.rslides_tabs,
 #main-slider ul.rslides_tabs {
 	position: relative;
 	z-index: 9;
@@ -77,15 +78,19 @@ div.slidetext-container {
 
 }
 
+.sliderportlet,
 #main-slider  {
 	position: relative;
 	}
 	
+.sliderportlet ul.rslides_tabs li,
 #main-slider ul.rslides_tabs li {
 	margin: 0 4px;
 	padding: 0;
 	display: inline;
 	}
+	
+.sliderportlet  ul.rslides_tabs li a,
 #main-slider ul.rslides_tabs li a{
 	background: white;
 	border-radius: 50%;
