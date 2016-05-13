@@ -4,18 +4,16 @@
  
 <dd> 
  <tal:slider >
-  <ul id="slider" class="slider" >
-	<li tal:repeat="obj view/data/get_images">
+  	<span tal:repeat="obj view/data/get_images">
 		<img src="" alt=""
 		    tal:define="image_title obj/Title;
 		    image_url python:obj.getObject().absolute_url() + '/@@images/image/preview'"  
 		    tal:attributes="alt image_title; src image_url"/>
-		<span class="slidetext">
-		<p class="slidedescription" 
+ 
+		<p class="slideportlet" 
 			tal:content="obj/description"/>
-		</span>
-	</li>
-  </ul>
+
+	</span>
  </tal:slider>
 </dd>
 </dl>
