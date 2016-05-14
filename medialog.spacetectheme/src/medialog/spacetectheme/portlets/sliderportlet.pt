@@ -4,14 +4,15 @@
  
 <div  class="sliderportlet">
 <tal:repeat tal:repeat="obj view/get_images"> 
+    <div   tal:define="image_title obj/Title;
+            description obj/Description;
+		    image_url python:obj.getObject().absolute_url() + '/@@images/image/preview'"  >
 		<img src="" alt=""
 		    class="slider-img img-responsive"
-		    tal:define="image_title obj/Title;
-		    image_url python:obj.getObject().absolute_url() + '/@@images/image/preview'"  
 		    tal:attributes="alt image_title; src image_url"/>
  
-		<!--p  tal:content="obj/description"/-->
-
+        <p  tal:content="description"/>
+    </div>
 </tal:repeat>
 </div>
 <script>$(function () {
