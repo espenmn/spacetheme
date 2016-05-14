@@ -94,10 +94,16 @@ class Renderer(base.Renderer):
         catalog = api.portal.get_tool(name='portal_catalog')
         tagged_images = catalog(portal_type='Image', Subject=tags, sort_on=sort_on, sort_order=sort_order)
         return [image for image in tagged_images]
-   
-    #def get_image_list(self):
-    #    return [{'url': image.absolute_url(), 'title': image.Title(), 'description': image.Description() } for image in self.get_images]
-        
+
+    @memoize  
+    def get_image_list(self):
+        tags = self.data.tags
+        sort_on = self.data.sort_on
+        sort_order = self.data.sort_order
+        catalog = api.portal.get_tool(name='portal_catalog')
+        tagged_images = catalog(portal_type='Image', Subject=tags, sort_on=sort_on, sort_order=sort_order)
+        return [{'url': image.getURL(), 'title': image.Title, 'description': image.Description }  for image in tagged_images]
+
     @memoize
     def hasImages(self):
         return ( len(self.get_images()) > 0 )
