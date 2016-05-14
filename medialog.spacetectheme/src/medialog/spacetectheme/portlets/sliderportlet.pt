@@ -1,6 +1,7 @@
 <dl class="portlet portletSliderPortlet"
     tal:define="portal_url context/@@plone_portal_state/portal_url;"
-        		i18n:domain="medialog.spacetectheme">
+        		i18n:domain="medialog.spacetectheme"
+        		tal:condition="view/hasImages">
  
 <div  class="sliderportlet">
 <tal:repeat tal:repeat="obj view/get_images"> 
@@ -11,6 +12,7 @@
 		    class="slider-img img-responsive"
 		    tal:attributes="alt image_title; src image_url"/>
  
+        <h3  tal:content="image_title"/>
         <p  tal:content="description"/>
     </div>
 </tal:repeat>
@@ -20,7 +22,7 @@
     maxwidth: 768,
     nav: false,
     speed: 2000,
-    pager: false,
+    pager: true,
     prevText: "<",  
     nextText: ">",    
   

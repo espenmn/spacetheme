@@ -83,10 +83,10 @@ class Renderer(base.Renderer):
     _template = ViewPageTemplateFile('sliderportlet.pt')
     render = _template
     
-
     def __init__(self, *args):
         base.Renderer.__init__(self, *args)
 
+    @memoize
     def get_images(self):
         tags = self.data.tags
         sort_on = self.data.sort_on
@@ -95,12 +95,12 @@ class Renderer(base.Renderer):
         tagged_images = catalog(portal_type='Image', Subject=tags, sort_on=sort_on, sort_order=sort_order)
         return [image for image in tagged_images]
    
-    def get_image_list(self):
-        return [{'url': image.absolute_url(), 'title': image.Title(), 'description': image.Description() } for image in self.get_images]
+    #def get_image_list(self):
+    #    return [{'url': image.absolute_url(), 'title': image.Title(), 'description': image.Description() } for image in self.get_images]
         
+    @memoize
     def hasImages(self):
-        return ( len(self.get_images) > 0 )
-
+        return ( len(self.get_images()) > 0 )
 
 class AddForm(formhelper.AddForm):
     schema = ISliderPortlet
