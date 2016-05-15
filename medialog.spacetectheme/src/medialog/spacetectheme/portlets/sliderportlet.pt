@@ -13,7 +13,7 @@
         <div tal:define="title obj/title; 
             description obj/description;
             obj_url obj/url;
-            slideimage_url python: obj_url">
+            slideimage_url python:obj_url+'/@@images/image/preview'">
             <h3  tal:content="title" />
             <img src="" alt=""
 		        class="slider-img img-responsive"
