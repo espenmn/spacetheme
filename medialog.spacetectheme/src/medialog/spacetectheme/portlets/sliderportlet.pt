@@ -1,11 +1,15 @@
-<dl class="portlet portletSliderPortlet"
+<aside class="portlet portletSliderPortlet"
     tal:define="portal_url context/@@plone_portal_state/portal_url;"
         		i18n:domain="medialog.spacetectheme"
         		tal:condition="view/hasImages">
 
-<div  class="sliderportlet"  
-    tal:define="imagex view/get_image_list">
-    <tal:repeat tal:repeat="obj imagex"> 
+    <header class="portletHeader">
+        <span tal:content="view/data/title" />
+    </header>
+    
+    <div class="portletItem sliderportlet"  
+      tal:define="imagex view/get_image_list">
+      <tal:repeat tal:repeat="obj imagex"> 
         <div>
          <img src="" alt=""
 		    class="slider-img img-responsive"
@@ -14,8 +18,8 @@
          <h3  tal:content="obj/title"/>
          <p  tal:content="obj/description"/>
         </div>
-    </tal:repeat>
-</div>
+      </tal:repeat>
+    </div>
 <script>$(function () {
     $(".sliderportlet").responsiveSlides({
     maxwidth: 768,
@@ -29,4 +33,4 @@
 });
 
 </script>
-</dl>
+</aside>
