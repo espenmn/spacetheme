@@ -25,9 +25,9 @@
 <script>$(function () {
     $(".sliderportlet").responsiveSlides({
     maxwidth: 768,
-    nav: false,
+    nav: true,
     speed: 2000,
-    pager: true,
+    pager: false,
     prevText: "<",  
     nextText: ">",    
   
