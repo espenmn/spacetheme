@@ -670,6 +670,39 @@ margin-bottom: 40px;
 	margin-right: 6px;
 }
 
+a.rslides_nav{
+	float: right;
+	display: block;
+	position: absolute;
+	top:  22px;
+
+ 	font-size: 2em;
+	text-decoration: none;
+	font-weight: bold;
+	color:  #CCC;;
+}
+
+a.rslides_nav.prev{
+	left: 10px;
+}
+
+a.rslides_nav.next{
+	right: 30px;
+}
+
+
+ .portletSliderPortlet h3 {
+	margin-top: 0;
+}
+ .portletSliderPortlet img {
+	margin-bottom: 18px;
+}
+
+aside.portlet.portletSliderPortlet {
+	height: 100%;
+	position: relative;
+}
+
 
 a.supportweb {
 	text-decoration: underline;
