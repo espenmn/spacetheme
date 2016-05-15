@@ -10,13 +10,15 @@
     <div class="portletItem sliderportlet"  
       tal:define="imagex view/get_image_list">
       <tal:repeat tal:repeat="obj imagex"> 
-        <div>
-         <h3  tal:content="obj/title"/>
+        <div tal:define="title obj/title; 
+            description obj/description;
+            obj_url obj/url;
+            slideimage_url python: obj_url + '/@@images/image/preview'"">
+         <h3  tal:content="title"/>
          <img src="" alt=""
 		    class="slider-img img-responsive"
-		    tal:define="slideimage_url python: obj.url + '/@@images/image/preview'"
-		    tal:attributes="alt obj/title; src slideimage_url"/>
-         <p  tal:content="obj/description"/>
+		    tal:attributes="alt title; src slideimage_url"/>
+         <p  tal:content="description"/>
         </div>
       </tal:repeat>
     </div>
