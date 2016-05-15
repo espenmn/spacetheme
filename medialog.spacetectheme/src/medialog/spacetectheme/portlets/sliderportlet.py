@@ -9,7 +9,6 @@ from zope.interface import implements
 from zope.schema.fieldproperty import FieldProperty
 from plone import api
 
-
 from zope.i18nmessageid import MessageFactory
 _ = MessageFactory('medialog.spacetectheme')
 
@@ -49,17 +48,16 @@ class ISliderPortlet(IPortletDataProvider):
             ),
     )
 
+
 class Assignment(base.Assignment):
     """
     Portlet assignment.
     This is what is actually managed through the portlets UI and associated
     with columns.
     """
-
     implements(ISliderPortlet)
     
     header = u""
-   
    
     def __init__(self, header=u"",  tags='', sort_on='', sort_order='', get_images=None):
         self.header = header
@@ -75,8 +73,7 @@ class Assignment(base.Assignment):
         "manage portlets" screen. Here, we use the title that the user gave.
         """
         return self.header
-
-
+        
 
 class Renderer(base.Renderer):
 
@@ -107,6 +104,7 @@ class Renderer(base.Renderer):
     @memoize
     def hasImages(self):
         return ( len(self.get_images()) > 0 )
+
 
 class AddForm(formhelper.AddForm):
     schema = ISliderPortlet
