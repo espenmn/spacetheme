@@ -14,7 +14,7 @@
          <h3  tal:content="obj/title"/>
          <img src="" alt=""
 		    class="slider-img img-responsive"
-		    tal:dedfine="slideimage_url python: obj.url + '/@@images/image/preview'"
+		    tal:define="slideimage_url python: obj.url + '/@@images/image/preview'"
 		    tal:attributes="alt obj/title; src slideimage_url"/>
          <p  tal:content="obj/description"/>
         </div>

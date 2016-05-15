@@ -1,8 +1,8 @@
-/* @override http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css */
-
 /* @override 
 	http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
-	http://localhost:8080/www/++theme++xxx/spacetec2016.css
+	http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
+	http://localhost:8080/www/++theme++xxx/spacetec2016.css 
+	http://xweb14f.plana.dk:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
 */
 
 .managePortletsFallback,
@@ -475,8 +475,8 @@ a:visited {
 #portal-footer div.row div.col-xs-12 ,
 .abwrap {
  	padding-top: 15px;
-  width: 300px;
   margin: 0 auto;
+  
 }
 .contentwrapper img {
   max-width: 100%;
@@ -1176,7 +1176,7 @@ li#breadcrumbs-3 {
 #portal-footer div.row div.col-xs-12 ,
   .abwrap {
 	padding-top: 25px;
-    width: 700px;
+    width: 90%;
   }
   .notmobile {
     display: block;
