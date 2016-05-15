@@ -11,12 +11,11 @@
       tal:define="imagex view/get_image_list">
       <tal:repeat tal:repeat="obj imagex"> 
         <div>
+         <h3  tal:content="obj/title"/>
          <img src="" alt=""
 		    class="slider-img img-responsive"
 		    tal:dedfine="slideimage_url python: obj.url + '/@@images/image/preview'"
 		    tal:attributes="alt obj/title; src slideimage_url"/>
- 
-         <h3  tal:content="obj/title"/>
          <p  tal:content="obj/description"/>
         </div>
       </tal:repeat>
