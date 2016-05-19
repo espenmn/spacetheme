@@ -62,7 +62,7 @@ class Assignment(base.Assignment):
     
     header = u""
    
-    def __init__(self, header=u"",  tags='', sort_on='', sort_order='', height='' get_images=None):
+    def __init__(self, header=u"",  tags='', sort_on='', sort_order='', height='', get_images=None):
         self.header = header
         self.sort_on = sort_on
         self.sort_order = sort_order
