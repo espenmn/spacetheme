@@ -71,12 +71,6 @@ div.outer-wrapper {
 }
 
 
-.col70  {
-	width: 70%;
-	float: left;
-  box-sizing: border-box;
-}
-
 
 
 #portal-footer {
@@ -1164,9 +1158,19 @@ li#breadcrumbs-3 {
 
 
 @media (max-width: 700px) {
+
+	.portlet {
+		width: 100% !important;
+	}
+
+	#portal-footer-wrapper {
+		padding-left: 3em;
+		padding-right: 3em;
+	}
 	div.social a.supportweb span.notmobile {
-	display: none;
-}
+		display: none;
+	}
+
 }
 
  
@@ -1379,7 +1383,6 @@ li#breadcrumbs-3 {
     padding-right: 10%;
   }
   #portal-column-two {
-    width: 30%;
     float: left;
   }
   .bottomMiddleContent {

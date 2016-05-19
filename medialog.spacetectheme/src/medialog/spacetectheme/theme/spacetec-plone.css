@@ -1,3 +1,5 @@
+/* @override http://xweb14f.plana.dk:8080/www/++theme++medialog.spacetectheme/spacetec-plone.css */
+
 /* @override 
 	http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec-plone.css
 	http://www.medialog.no//++theme++tvedtbergensiana/less/bergensiana-compiled.css
@@ -2055,6 +2057,19 @@ fieldset[disabled] .link-parent.active {
   .plone-modal .plone-modal-content {
     width: 970px;
   }
+  
+  
+.col70  {
+	width: 70%;
+	float: left;
+  box-sizing: border-box;
+  
+  
+}
+.col30  {
+    width: 30%;
+    float: left;
+}
 }
 @media (min-width: 1200px) {
   .plone-modal .plone-modal-content {
