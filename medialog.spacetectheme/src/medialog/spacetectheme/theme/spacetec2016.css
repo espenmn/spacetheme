@@ -21,6 +21,12 @@
 	display: none;
 }
 
+span.photoAlbumEntryTitle {
+	display: block;
+}
+
+
+
 
 /*Framework */
 body {
