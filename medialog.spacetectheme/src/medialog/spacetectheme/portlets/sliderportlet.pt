@@ -28,7 +28,7 @@
     $(".sliderportlet").responsiveSlides({
     maxwidth: 768,
     nav: true,
-    speed: 5000,
+    speed: 3000,
     pager: false,
     prevText: "<",  
     nextText: ">",    
