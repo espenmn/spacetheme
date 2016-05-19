@@ -1,7 +1,9 @@
 <aside class="portlet portletSliderPortlet"
-    tal:define="portal_url context/@@plone_portal_state/portal_url;"
+    tal:define="portal_url context/@@plone_portal_state/portal_url;
+    			height view/data/height"
         		i18n:domain="medialog.spacetectheme"
-        		tal:condition="view/hasImages">
+        		tal:condition="view/hasImages"
+        		tal:attributes="style string:height: ${height}px">
 
     <header class="portletHeader">
         <span tal:content="view/data/title" />

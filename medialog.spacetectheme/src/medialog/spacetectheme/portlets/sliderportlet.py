@@ -48,6 +48,9 @@ class ISliderPortlet(IPortletDataProvider):
             ),
     )
 
+    height = schema.Int(
+            title=_(u"Height of portlet"),
+    )
 
 class Assignment(base.Assignment):
     """
