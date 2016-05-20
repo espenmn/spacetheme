@@ -14,8 +14,8 @@
 							<!--a target="_blank" href="search_form"-->
 					<i class="fa fa-search"></i></a>
 
- 				<a href="/rss/news/" id="aRssNews">
-								<i class="fa fa-rss"> </i>
+ 				<a href="news/aggregator/RSS" id="RssNews">
+					<i class="fa fa-rss"> </i>
 				</a>
 				<a href="login"><i class="fa fa-lock"></i></a>
 				<a href="https://support.spacetec.no/index.php" class="supportweb"><i class="fa fa-support"></i><span class="notmobile">Supportweb</span></a>

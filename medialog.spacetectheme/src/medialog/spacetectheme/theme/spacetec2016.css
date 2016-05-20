@@ -1,3 +1,5 @@
+/* @override http://xweb14f.plana.dk:8080/www/++theme++medialog.spacetectheme/spacetec2016.css */
+
 /* @override 
 	http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
 	http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
@@ -20,12 +22,6 @@
 #content   nav.pagination ul li::before{
 	display: none;
 }
-
-span.photoAlbumEntryTitle {
-	display: block;
-}
-
-
 
 
 /*Framework */
@@ -415,7 +411,7 @@ div.documentDescription.description  {
 	clear: left;
 	display: block;
 	line-height: 130%;
-	padding-left: 0.2em;
+	padding-left: 0;
 }
 a {
   color: #1d3553;
@@ -547,9 +543,11 @@ span#categories-filed-under {
 ul.doublearrow li:before {
   content: "\f101";
   display: inline-block;
-  margin-left: -14pt; /* adding-left set on li */
-  width: 14pt;
-	font: 1.2em FontAwesome;
+  margin-left: -20pt; /* adding-left set on li */
+  width: 17pt;
+  overflow: hidden;
+  font: 1.2em FontAwesome;
+   box-sizing: content-box;
 }
 
  
