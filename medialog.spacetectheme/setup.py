@@ -45,6 +45,7 @@ setup(
 		'plone.app.contentlisting',
 		'medialog.leadimagesize',
 		'medialog.bergensiana>0.2.2',
+		'medialog.portlet.placeholder',
         'plone.app.theming',
         'plone.app.themingplugins',
         'Products.GenericSetup>=1.8.2',

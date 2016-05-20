@@ -2,3 +2,6 @@ graft src/medialog
 graft docs
 include *.rst
 global-exclude *.pyc
+global-exclude *medialog.portlet.placeholder.egg-info
+global-exclude  *.egg-info
+global-exclude  *.egg-info/
