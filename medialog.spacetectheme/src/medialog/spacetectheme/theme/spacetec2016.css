@@ -7,6 +7,12 @@
 	http://xweb14f.plana.dk:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
 */
 
+#main-slider {
+	max-height: 450px;
+	overflow: hidden;
+}
+
+
 .managePortletsFallback,
 .hiddenStructure,
 .hidden {
@@ -268,6 +274,7 @@ div.header {
 
  #portal-logo img {
   height: auto;
+ 
   position: relative;
   top: 10px;
   width: auto;
