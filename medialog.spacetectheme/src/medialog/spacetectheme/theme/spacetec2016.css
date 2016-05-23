@@ -8,6 +8,7 @@
 */
 
 #main-slider {
+	xmin-height: 165px;
 	max-height: 450px;
 	overflow: hidden;
 }
@@ -1094,7 +1095,7 @@ span#breadcrumbs-current,
  
 @media (max-width: 900px)  {
 	
-body::not(.section-front-page) #portal-breadcrumbs li a {
+body::not(.section-front-page) #portal-breadcrumbs > li > a {
 	font-size: 0;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -1104,6 +1105,7 @@ body::not(.section-front-page) #portal-breadcrumbs li a {
 	background-position: 15px center;
 	background-repeat: no-repeat;
 	}
+
 	
 	span#breadcrumbs-current {
 	text-transform: none;
