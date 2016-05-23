@@ -1094,7 +1094,7 @@ span#breadcrumbs-current,
  
 @media (max-width: 900px)  {
 	
-#portal-breadcrumbs li a {
+body::not(.section-front-page) #portal-breadcrumbs li a {
 	font-size: 0;
 	padding-left: 15px;
 	padding-right: 15px;
