@@ -26,6 +26,7 @@
 $(window).resize(function(){
    // Setting the heigth of the slides
    $('#slider').height($('#slider').width()*35/100);
+   $('.fillme').height($('#slider').width()*35/100);
 }).resize();
 </script>
 </tal:check>
