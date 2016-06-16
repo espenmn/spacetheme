@@ -7,7 +7,7 @@
  				<img class="slider-img img-responsive" src="" alt="" tal:attributes="src image_url"/>
             </li>
         </tal:repeat>
-</div>
+	</ul>
 
 
 <script>$(function () {
