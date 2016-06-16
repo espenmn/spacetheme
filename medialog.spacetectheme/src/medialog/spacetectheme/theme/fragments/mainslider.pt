@@ -1,14 +1,13 @@
 <section id="main-slider" class="no-margin"> 
 <tal:check tal:condition="exists: context/slider">
-	<div id="slider">
+	<ul id="slider" class="rslides">
         <tal:repeat tal:repeat="item  context/slider/@@contentlisting">
-            <div  class="fillme" tal:define="item_url item/getURL|item/absolute_url;
-				    image_url python:item_url + '/@@images/image';
-				    style     python:'background-image:url(' + image_url +')'"
-		 	tal:attributes="style style"  >
-            </div>
+            <li  class="fillme" tal:define="item_url item/getURL|item/absolute_url;
+				    image_url python:item_url + '/@@images/image'">
+ 				<img class="slider-img img-responsive" src="" alt="" tal:attributes="src image_url"/>
+            </li>
         </tal:repeat>
-    </div>
+</div>
 
 
 <script>$(function () {
