@@ -7,12 +7,12 @@
  				<img class="slider-img img-responsive" src="" alt="" tal:attributes="src image_url"/>
             </li>
         </tal:repeat>
-	</ul>
+</ul>
 
 
 <script>$(function () {
     $("#slider").responsiveSlides({
-    maxwidth: 4000,
+    maxwidth: 1400,
     maxheight: 450,
     nav: false,
     speed: 2000,
