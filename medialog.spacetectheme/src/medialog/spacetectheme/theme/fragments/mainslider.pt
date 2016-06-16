@@ -24,7 +24,7 @@
 });
 $(window).resize(function(){
    // Setting the heigth of the slides
-   $('#slider, .fillme').height($('#slider').width()*40/100);
+   $('#slider, .fillme').height($('#slider, .fillme').width()*40/100);
 }).resize();
 </script>
 </tal:check>
