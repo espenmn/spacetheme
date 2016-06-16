@@ -1,13 +1,14 @@
 <section id="main-slider" class="no-margin"> 
 <tal:check tal:condition="exists: context/slider">
-	<ul id="slider" class="rslides">
+	<div id="slider">
         <tal:repeat tal:repeat="item  context/slider/@@contentlisting">
-            <li  class="fillme" tal:define="item_url item/getURL|item/absolute_url;
-				    image_url python:item_url + '/@@images/image'">
- 				<img class="slider-img img-responsive" src="" alt="" tal:attributes="src image_url"/>
-            </li>
+            <div  class="fillme" tal:define="item_url item/getURL|item/absolute_url;
+				    image_url python:item_url + '/@@images/image';
+				    style     python:'background-image:url(' + image_url +')'"
+		 	tal:attributes="style style"  >
+            </div>
         </tal:repeat>
-</ul>
+    </div>
 
 
 <script>$(function () {
@@ -24,7 +25,7 @@
 });
 $(window).resize(function(){
    // Setting the heigth of the slides
-   $('#slider, .fillme').height($('#slider, .fillme').width()*40/100);
+   $('#slider, .fillme').height($('#slider, .fillme').width()*35/100);
 }).resize();
 </script>
 </tal:check>
