@@ -7,3 +7,5 @@ medialog.spacetectheme/src/medialog.spacetectheme.egg-info/*
 medialog.spacetectheme/src/medialog.spacetectheme.egg-info
 
 medialog.spacetectheme/src/medialog/spacetectheme/theme/extracted-bergensiana-white.css
+
+*.zip
