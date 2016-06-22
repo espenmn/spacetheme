@@ -3,7 +3,7 @@
            xmlns:xhtml="http://www.w3.org/1999/xhtml"
            xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
            xmlns:xi="http://www.w3.org/2001/XInclude">
-        <xi:include href="backend.xml" />
+        <xi:include href="++theme++medialog.spacetectheme/backend.xml" />
            <theme href="index.html" />
            
           <rules if-content="//*[@id='portal-top']">
