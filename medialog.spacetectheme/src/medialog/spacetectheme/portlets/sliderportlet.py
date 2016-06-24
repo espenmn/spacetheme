@@ -52,6 +52,11 @@ class ISliderPortlet(IPortletDataProvider):
             title=_(u"Height of portlet"),
     )
 
+    speed = schema.Int(
+            title=_(u"Speed"),
+    )
+
+
 class Assignment(base.Assignment):
     """
     Portlet assignment.
