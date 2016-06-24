@@ -11,3 +11,34 @@ class IMedialogSpacetecthemeLayer(IDefaultBrowserLayer):
 class IBelow(IColumn):
     """here we put the below content portlets
     """    
+
+from plone.theme.interfaces import IDefaultPloneLayer
+    
+from z3c.form import interfaces
+from zope import schema
+from zope.interface import alsoProvides
+from plone.directives import form
+from medialog.controlpanel.interfaces import IMedialogControlpanelSettingsProvider
+
+
+class ISpacetecSettings(form.Schema):
+	"""Adds settings to medialog.controlpanel
+	"""
+
+	form.fieldset(
+		'frontslider',
+		label=_(u'frontslder'),
+		fields=[
+			'transaction',
+			'speed',
+		],
+	)
+
+    speed = schema.Int(
+            title=_(u"Speed"),
+    )
+
+    timeout = schema.Int(
+            title=_(u"Timeout (transition speed)"),
+
+alsoProvides(ISpacetecSettings, IMedialogControlpanelSettingsProvider)

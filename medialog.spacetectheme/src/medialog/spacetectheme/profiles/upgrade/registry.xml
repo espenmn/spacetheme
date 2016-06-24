@@ -1,0 +1,6 @@
+<registry>
+  <records interface="medialog.spacetectheme.interfaces.ISpacetecSettings">
+	<value key="speed">500</value>
+	<value key="timeout">2000</value>
+  </records>
+</registry>

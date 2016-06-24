@@ -31,6 +31,14 @@
       />
 
   <genericsetup:registerProfile
+      name="upgrad"
+      title="medialog.spacetectheme upgrade"
+      directory="profiles/upgrade"
+      description="Upgrades medialog.spacetectheme add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
       name="uninstall"
       title="medialog.spacetectheme (uninstall)"
       directory="profiles/uninstall"
