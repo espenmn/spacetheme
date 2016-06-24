@@ -56,6 +56,9 @@ class ISliderPortlet(IPortletDataProvider):
             title=_(u"Speed"),
     )
 
+    timeout = schema.Int(
+            title=_(u"Timeout (transition speed)"),
+    )
 
 class Assignment(base.Assignment):
     """
