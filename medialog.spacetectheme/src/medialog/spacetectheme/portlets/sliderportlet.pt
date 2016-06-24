@@ -29,6 +29,7 @@
     maxwidth: 768,
     nav: true,
     speed: ${view/data/speed},
+    timeout: ${view/data/timeout}, 
     pager: false,
     prevText: "<",  
     nextText: ">",    
