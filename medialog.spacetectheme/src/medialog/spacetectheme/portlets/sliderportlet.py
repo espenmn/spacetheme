@@ -67,13 +67,14 @@ class Assignment(base.Assignment):
     
     header = u""
    
-    def __init__(self, header=u"",  tags='', sort_on='', sort_order='', height='', get_images=None):
+    def __init__(self, header=u"",  tags='', sort_on='', sort_order='', height='', speed=2000, get_images=None):
         self.header = header
         self.sort_on = sort_on
         self.sort_order = sort_order
         self.tags = tags
         self.get_images = get_images
         self.height = height
+        self.speed = speed
 
     
     @property
