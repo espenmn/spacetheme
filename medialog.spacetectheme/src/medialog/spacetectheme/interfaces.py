@@ -28,7 +28,7 @@ class ISpacetecSettings(form.Schema):
         'frontslider',
         label=u'frontslder',
         fields=[
-            'transaction',
+            'timeout',
             'speed',
         ],
     )
