@@ -28,13 +28,12 @@
     $(".sliderportlet").responsiveSlides({
     maxwidth: 768,
     nav: true,
-    speed: %(speed)i,
+    speed: ${view/data/speed},
     pager: false,
     prevText: "<",  
     nextText: ">",    
   
     });
-}); % { 'speed': view.data.speed}
-
+}); 
 </script>
 </aside>
