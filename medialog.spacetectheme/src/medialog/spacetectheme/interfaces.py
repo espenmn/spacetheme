@@ -39,5 +39,6 @@ class ISpacetecSettings(form.Schema):
 
     timeout = schema.Int(
             title=_(u"Timeout (transition speed)"),
+    )
 
 alsoProvides(ISpacetecSettings, IMedialogControlpanelSettingsProvider)
