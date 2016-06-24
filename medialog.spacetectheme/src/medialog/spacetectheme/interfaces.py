@@ -26,7 +26,7 @@ class ISpacetecSettings(form.Schema):
 
     form.fieldset(
         'frontslider',
-        label=_(u'frontslder'),
+        label=u'frontslder',
         fields=[
             'transaction',
             'speed',
@@ -34,11 +34,11 @@ class ISpacetecSettings(form.Schema):
     )
 
     speed = schema.Int(
-            title=_(u"Speed"),
+            title=u"Speed",
     )
 
     timeout = schema.Int(
-            title=_(u"Timeout (transition speed)"),
+            title=u"Timeout (transition speed)",
     )
 
 alsoProvides(ISpacetecSettings, IMedialogControlpanelSettingsProvider)
