@@ -130,8 +130,8 @@ class Renderer(base.Renderer):
         $(".sliderportlet").responsiveSlides({
         maxwidth: 768,
         nav: true,
-        speed: %(speed)i,
-        timeout: %(timeout)i, 
+        speed: 500,
+        timeout: 400, 
         pager: false,
         prevText: "<",  
         nextText: ">",    
