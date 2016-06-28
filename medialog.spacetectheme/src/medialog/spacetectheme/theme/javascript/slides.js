@@ -17,6 +17,6 @@ $( document ).ready(function() {
     pager: false,
     prevText: "<",  
     nextText: ">",    
-  
+    namespace: "srslides",  
     });
 });
