@@ -13,18 +13,7 @@
     </div>
 
 
-<script>$(function () {
-    $("#slider").responsiveSlides({
-    maxwidth: 1400,
-    maxheight: 450,
-    nav: false,
-    speed:   $('this').attr("data-speed"),
-    timeout: $('this').attr("data-timeout"),
-    pager: false,
-    prevText: "<",  
-    nextText: ">",    
-    });
-});
+<script>
 $(window).resize(function(){
    // Setting the heigth of the slides
    $('#slider').height($('#slider').width()*35/100);
