@@ -19,12 +19,12 @@
 			<drop css:content="head link[rel='apple-touch-icon']" />
 			<drop css:content="head link[rel='shortcut icon']" />
 			<!-- CSS -->
-			<after theme-children="/html/head" content="/html/head/link" />
+			<!-- after theme-children="/html/head" content="/html/head/link" /-->
 			<!-- Script -->
 			<after theme-children="/html/head" content="/html/head/script" />
 			
-            <!after css:theme-children="head" css:content="head link" />
-            <!after css:theme-children="head" css:content="head style" />
+            <after css:theme-children="head" css:content="head link" />
+            <after css:theme-children="head" css:content="head style" />
 		</rules>
 
 		<!-- Copy over the id/class attributes on the body tag.
