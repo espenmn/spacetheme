@@ -27,6 +27,10 @@
             <after css:theme-children="head" css:content="head style" />
 		</rules>
 
+  
+    	<!-- Content header -->
+  		<replace css:theme="#portal-top" css:content-children="#portal-top" />
+
 		<!-- Copy over the id/class attributes on the body tag.
 			   This is important for per-section styling -->
 		<copy attributes="*" css:content="body" css:theme="body" />
@@ -101,9 +105,6 @@
 
   <!-- footer -->
   <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
-  
-    <!-- Content header -->
-  <replace css:theme="#portal-top" css:content-children="#portal-top" />
 
 
   <!-- Fragments -->
