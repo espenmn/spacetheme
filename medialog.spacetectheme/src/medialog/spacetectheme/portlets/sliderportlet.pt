@@ -27,16 +27,3 @@
       </tal:repeat>
     </div>
 </aside>
-<script>
-    $(function() {
-   $(".sliderportlet").responsiveSlides({
-    maxwidth: 768,
-    nav: true,
-    speed: $('.sliderportlet').attr("data-speed"),
-    timeout: $('.sliderportlet').attr("data-timeout"),
-    pager: false,
-    prevText: "<",  
-    nextText: ">", 
-    });
-});
-</script>
