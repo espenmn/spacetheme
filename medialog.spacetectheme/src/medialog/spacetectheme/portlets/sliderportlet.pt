@@ -3,7 +3,7 @@
     			height view/data/height"
         		i18n:domain="medialog.spacetectheme"
         		tal:condition="view/hasImages"
-        		tal:attributes="style string:min-height: ${height}px">
+        		tal:attributes="style string:height: ${height}px">
 
     <header class="portletHeader">
         <span tal:content="view/data/title" />
