@@ -38,8 +38,8 @@ $(window).load(function() {
     directionNav: false,
     prevText: '<',
     nextText: '>',
-    slideshowSpeed:	$('.sliderportlet').attr("data-speed"),
-	animationSpeed: $('.sliderportlet').attr("data-timeout"),
+    slideshowSpeed:	 ${view/data/speed},
+	animationSpeed: 	 ${view/data/timeout},
   });
 });
 </script>
