@@ -24,5 +24,5 @@
         </div>
       </tal:repeat>
     </div>
-<script tal:replace="structure view/javascript"></script>
+<script tal:replace="structure view/data/javascript"></script>
 </aside>
