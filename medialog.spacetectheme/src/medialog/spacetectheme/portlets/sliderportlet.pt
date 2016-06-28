@@ -24,5 +24,19 @@
         </div>
       </tal:repeat>
     </div>
-<script tal:replace="structure view/javascript"></script>
+<script>$(function () {
+    $(".sliderportlet").responsiveSlides({
+    maxwidth: 768,
+    nav: true,
+    speed: ${view/data/speed},
+    timeout: ${view/data/timeout},
+    pager: false,
+    prevText: "<",  
+    nextText: ">",    
+  
+    });
+});
+
+
+</script>
 </aside>
