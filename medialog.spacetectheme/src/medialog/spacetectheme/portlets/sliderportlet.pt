@@ -26,4 +26,18 @@
         </div>
       </tal:repeat>
     </div>
+<script>
+    $(function() {
+   $(".sliderportlet").responsiveSlides({
+    maxwidth: 768,
+    namespace: "portletslider",
+    nav: true,
+    speed: ${view/data/speed},
+    timeout:${view/data/timeout},
+    pager: false,
+    prevText: "<",  
+    nextText: ">",    
+    });
+});
+</script>
 </aside>

@@ -676,6 +676,7 @@ margin-bottom: 40px;
 	margin-right: 6px;
 }
 
+a.portletslider_nav,
 a.rslides_nav{
 	float: right;
 	display: block;
@@ -688,10 +689,12 @@ a.rslides_nav{
 	color:  #CCC;;
 }
 
+a.portletslider_nav.prev,
 a.rslides_nav.prev{
 	left: 10px;
 }
 
+a.portletslider_nav.next, 
 a.rslides_nav.next{
 	right: 30px;
 }

@@ -16,7 +16,16 @@
     </div>
 
 
-<script>
+<script>$(function() {
+    $("#slider").responsiveSlides({
+    maxwidth: 1400,
+    namespace: "mainslider",
+    nav: false,
+    speed: ${speed},
+    timeout: ${timeout},
+    pager: false,
+    });
+});
 $(window).resize(function(){
    // Setting the heigth of the slides
    $('#slider').height($('#slider').width()*35/100);
