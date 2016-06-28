@@ -1,5 +1,7 @@
 <section id="main-slider" class="no-margin"> 
-<tal:check tal:condition="exists: context/slider">
+<tal:check tal:condition="exists: context/slider"
+	tal:define="slider_speed python: context.portal_registry['medialog.spacetectheme.interfaces.ISpacetecSettings.speed'];
+				slider_timeout python: context.portal_registry['medialog.spacetectheme.interfaces.ISpacetecSettings.timeout']">
 	<div id="slider">
         <tal:repeat tal:repeat="item  context/slider/@@contentlisting">
             <div  class="fillme" tal:define="item_url item/getURL|item/absolute_url;
@@ -16,7 +18,7 @@
     maxwidth: 1400,
     maxheight: 450,
     nav: false,
-    speed: 400,
+    speed: ${slider_speed},
     timeout: 500,
     pager: false,
     prevText: "<",  
