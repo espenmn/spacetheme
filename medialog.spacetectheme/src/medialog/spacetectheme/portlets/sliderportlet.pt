@@ -14,29 +14,33 @@
       data-speed="${view/data/speed}"
       data-timeout="${view/data/timeout}">
       <tal:repeat tal:repeat="obj imagex"> 
-        <div tal:define="title obj/title; 
+        <div class="slides"
+        	tal:define="title obj/title; 
             description obj/description;
             obj_url obj/url;
             slideimage_url python:obj_url+'/@@images/image/preview'">
+      
             <h3  tal:content="title" />
             <img src="" alt=""
 		        class="slider-img img-responsive"
 		        tal:attributes="alt title; src slideimage_url"/>
             <p  tal:content="description" />
+        
         </div>
       </tal:repeat>
     </div>
-</aside>
-<script>
-    $(function() {
-   $(".sliderportlet").responsiveSlides({
-    maxwidth: 768,
-    nav: true,
-    speed: $('.sliderportlet').attr("data-speed"),
-    timeout: $('.sliderportlet').attr("data-timeout"),
-    pager: false,
-    prevText: "<",  
-    nextText: ">", 
-    });
+<script> 
+$(window).load(function() {
+  $('.sliderportlet').flexslider({
+    animation: "fade",
+    selector: '.slides',
+    controlNav: false,
+    directionNav: false,
+    prevText: '<',
+    nextText: '>',
+    slideshowSpeed:	$('.sliderportlet').attr("data-speed"),
+	animationSpeed: $('.sliderportlet').attr("data-timeout"),
+  });
 });
 </script>
+</aside>
