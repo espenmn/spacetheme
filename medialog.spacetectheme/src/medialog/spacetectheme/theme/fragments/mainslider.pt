@@ -11,13 +11,14 @@
             </div>
         </tal:repeat>
     </div>
+
 <script>$(function () {
     $("#slider").responsiveSlides({
     maxwidth: 1400,
     maxheight: 450,
     nav: false,
-    speed: 400,
-    timeout: 500,
+    speed: ${slider_speed},
+    timeout: ${slider_timeout},
     pager: false,
     prevText: "<",  
     nextText: ">",    
