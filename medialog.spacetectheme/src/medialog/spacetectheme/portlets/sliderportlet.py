@@ -126,7 +126,6 @@ class Renderer(base.Renderer):
         return self.data.timeout
         
     def javascript(self):
-        import pdb; pdb.set_trace()
         return """<script>$(function () {
         $(".sliderportlet").responsiveSlides({
         maxwidth: 768,
