@@ -3,7 +3,7 @@
            xmlns:xhtml="http://www.w3.org/1999/xhtml"
            xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
            xmlns:xi="http://www.w3.org/2001/XInclude">
- 
+        <xi:include href="backend.xml" />
            <theme href="index.html" />
            
           <rules if-content="//*[@id='portal-top']">
@@ -19,17 +19,10 @@
 			<drop css:content="head link[rel='apple-touch-icon']" />
 			<drop css:content="head link[rel='shortcut icon']" />
 			<!-- CSS -->
-			<!-- after theme-children="/html/head" content="/html/head/link" /-->
+			<after theme-children="/html/head" content="/html/head/link" />
 			<!-- Script -->
 			<after theme-children="/html/head" content="/html/head/script" />
-			
-            <after css:theme-children="head" css:content="head link" />
-            <after css:theme-children="head" css:content="head style" />
 		</rules>
-
-  
-    	<!-- Content header -->
-  		<replace css:theme="#portal-top" css:content-children="#portal-top" />
 
 		<!-- Copy over the id/class attributes on the body tag.
 			   This is important for per-section styling -->
@@ -105,7 +98,7 @@
 
   <!-- footer -->
   <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
-
+  
 
   <!-- Fragments -->
   <!-- sections on homepage only -->
@@ -113,9 +106,6 @@
     <replace css:theme="#main-slider"  css:content="#main-slider"   href="/@@theme-fragment/mainslider" /> 
   </rules>
 
-  <!-- toolbar -->
-  <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
-  <drop css:theme="#portal-toolbar" css:if-content=".userrole-anonymous" />
-  <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" />
 
- </rules>
+
+    </rules>
