@@ -17,7 +17,7 @@
 
 
 <script>$(function() {
-    $("#slider, .sliderportlet").responsiveSlides({
+    $("#slider").responsiveSlides({
     maxwidth: 1400,
     nav: false,
     speed: ${speed},
