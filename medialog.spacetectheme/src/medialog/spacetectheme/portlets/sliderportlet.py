@@ -70,7 +70,7 @@ class Assignment(base.Assignment):
     
     header = u""
    
-    def __init__(self, header=u"",  tags='', sort_on='', sort_order='', height='', speed=2000, timeout=2000, get_images=None, javascript=''):
+    def __init__(self, header=u"",  tags='', sort_on='', sort_order='', height='', speed=2000, timeout=2000, get_images=None):
         self.header = header
         self.sort_on = sort_on
         self.sort_order = sort_order
@@ -79,7 +79,6 @@ class Assignment(base.Assignment):
         self.height = height
         self.speed = speed
         self.timeout = timeout
-        self.javascript = javascript
 
     
     @property
@@ -126,7 +125,7 @@ class Renderer(base.Renderer):
     def timeout(self):
         return self.data.timeout
         
-    def javascript():
+    def javascript(self):
         import pdb; pdb.set_trace()
         return """<script>$(function () {
         $(".sliderportlet").responsiveSlides({
