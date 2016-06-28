@@ -1,4 +1,4 @@
-$(function () {
+$( document ).ready(function() {
     $("#slider").responsiveSlides({
     maxwidth: 1400,
     maxheight: 450,
