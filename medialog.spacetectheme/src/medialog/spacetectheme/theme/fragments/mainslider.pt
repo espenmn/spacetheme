@@ -22,8 +22,8 @@
     selector: '.fillme',
     controlNav: false,
     directionNav: false,
-    slideshowSpeed:	$(this).attr("data-speed"),
-	animationSpeed: $(this).attr("data-timeout"),
+    slideshowSpeed:	${speed},
+	animationSpeed: ${timeout},
   });
 });
  
