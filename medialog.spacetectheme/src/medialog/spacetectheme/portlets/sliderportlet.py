@@ -124,6 +124,25 @@ class Renderer(base.Renderer):
 
     def timeout(self):
         return self.data.timeout
+        
+    def javascript():
+        return """<script>$(function () {
+        $(".sliderportlet").responsiveSlides({
+        maxwidth: 768,
+        nav: true,
+        speed: %(speed)i,
+        timeout: %(timeout)i, 
+        pager: false,
+        prevText: "<",  
+        nextText: ">",    
+  
+        });
+        }); 
+        </script>
+        """  % {
+        'speed': self.speed,
+        'timeout': self.timeout,
+       }
 
 class AddForm(formhelper.AddForm):
     schema = ISliderPortlet
