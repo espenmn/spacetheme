@@ -11,8 +11,6 @@
             </div>
         </tal:repeat>
     </div>
-<
-
 <script>$(function () {
     $("#slider").responsiveSlides({
     maxwidth: 1400,
