@@ -12,8 +12,8 @@ $( document ).ready(function() {
 	$(".sliderportlet").responsiveSlides({
     maxwidth: 768,
     nav: true,
-    speed:   $(this).attr("data-speed"),
-    timeout: $(this).attr("data-timeout"),
+    speed:   $('.sliderportlet').attr("data-speed"),
+    timeout: $('.sliderportlet').attr("data-timeout"),
     pager: false,
     prevText: "<",  
     nextText: ">",    
