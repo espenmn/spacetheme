@@ -119,11 +119,9 @@ class Renderer(base.Renderer):
     def hasImages(self):
         return ( len(self.get_images()) > 0 )
 
-    @memoize
     def speed(self):
         return self.data.speed
 
-    @memoize
     def timeout(self):
         return self.data.timeout
 
