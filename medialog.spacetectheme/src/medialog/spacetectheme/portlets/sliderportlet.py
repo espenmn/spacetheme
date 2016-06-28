@@ -141,8 +141,8 @@ class Renderer(base.Renderer):
         }); 
         </script>
         """  % {
-        'speed': self.speed,
-        'timeout': self.timeout,
+        'speed': self.speed(),
+        'timeout': self.timeout(),
        }
 
 class AddForm(formhelper.AddForm):
