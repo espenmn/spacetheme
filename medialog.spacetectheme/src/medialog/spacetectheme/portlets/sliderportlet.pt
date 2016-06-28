@@ -10,7 +10,9 @@
     </header>
     
     <div class="portletItem sliderportlet"  
-      tal:define="imagex view/get_image_list">
+      tal:define="imagex view/get_image_list"
+      data-speed="${view/data/speed}"
+      data-timeout="${view/data/timeout}">
       <tal:repeat tal:repeat="obj imagex"> 
         <div tal:define="title obj/title; 
             description obj/description;
@@ -28,8 +30,8 @@
     $(".sliderportlet").responsiveSlides({
     maxwidth: 768,
     nav: true,
-    speed: ${view/data/speed},
-    timeout: ${view/data/timeout},
+    speed:   $('this').attr("data-speed"),
+    timeout: $('this').attr("data-timeout"),
     pager: false,
     prevText: "<",  
     nextText: ">",    
