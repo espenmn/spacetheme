@@ -49,10 +49,9 @@ class ISliderPortlet(IPortletDataProvider):
     )
     
     animation = schema.Choice(
-            title=_(u"Transition"),
+            title=_(u"Animation"),
             values=(
                 "slide",
-                "fade",
             ),
     )
 
@@ -87,7 +86,7 @@ class Assignment(base.Assignment):
         self.height = height
         self.speed = speed
         self.timeout = timeout
-        self. animation=  animation
+        self. animation=  animation()
 
     
     @property
@@ -135,7 +134,7 @@ class Renderer(base.Renderer):
         return self.data.timeout
         
     def animation(self):
-        return self.data.animation
+        return self.data.animation()
         
 
 class AddForm(formhelper.AddForm):
