@@ -30,12 +30,12 @@
       </tal:repeat>
     </div>
 <script> 
-$(window).load(function() {
+$(function() {
   $('.sliderportlet').flexslider({
     animation: "fade",
     selector: '.slides',
     controlNav: false,
-    directionNav: false,
+    directionNav: true,
     prevText: '<',
     nextText: '>',
     slideshowSpeed:	 ${view/data/speed},

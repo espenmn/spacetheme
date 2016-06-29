@@ -1,10 +1,10 @@
-/* @override http://xweb14f.plana.dk:8080/www/++theme++medialog.spacetectheme/spacetec2016.css */
-
 /* @override 
-	http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
-	http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
-	http://localhost:8080/www/++theme++xxx/spacetec2016.css 
 	http://xweb14f.plana.dk:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
+	http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
+	http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
+	http://localhost:8080/www/++theme++xxx/spacetec2016.css
+	http://xweb14f.plana.dk:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
+	http://localhost:8080/dadfasdfasd/++theme++medialog.spacetectheme/spacetec2016.css
 */
 
 #main-slider {
@@ -13,6 +13,9 @@
 	overflow: hidden;
 }
 
+aside.portlet.portletSliderPortlet {
+	overflow: hidden;
+}
 
 .managePortletsFallback,
 .hiddenStructure,
@@ -545,6 +548,12 @@ span#categories-filed-under {
 	padding-bottom: 10px;
 }
 
+#portal-column-two .flex-direction-nav  li:before,
+#portal-column-two .flex-direction-nav  li::before   {
+    display: none !important;
+
+}
+
 #content-core ul li:before,
 .portlet ul li:before,
 #portal-column-two ul li:before ,
@@ -677,23 +686,62 @@ margin-bottom: 40px;
 	margin-right: 6px;
 }
 
+.flex-direction-nav,
 a.portletslider_nav,
 a.rslides_nav{
 	float: right;
 	display: block;
 	position: absolute;
 	top:  22px;
-
  	font-size: 2em;
 	text-decoration: none;
 	font-weight: bold;
-	color:  #CCC;;
+	color:  #CCC;
 }
+.flex-direction-nav {
+	top:  -95px;
+	width: 100%;
+	z-index: 2;
+	padding: 0 !important;
+}
+.flex-nav-prev a,
+.flex-nav-next a{
+	color:  #CCC;
+	padding: 0;
+	text-decoration: none;
+	font-weight: bold;
+	color:  #CCC !important;
+	}
+	
+	
+.flex-direction-nav li{
+	width: 40px;
+	text-align: center;
+}
+ 
+li.flex-nav-prev{
+ float:  left !important;
+ 
+display: block;
+	}
+ 
+
+li.flex-nav-next {
+	 float:  right !important;
+ display: block;
+ 
+}
+
+
+
+
 
 a.portletslider_nav.prev,
 a.rslides_nav.prev{
 	left: 10px;
+	position: relative;
 }
+
 
 a.portletslider_nav.next, 
 a.rslides_nav.next{
