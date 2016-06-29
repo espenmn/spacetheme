@@ -47,6 +47,14 @@ class ISliderPortlet(IPortletDataProvider):
                 "descending",
             ),
     )
+    
+    transition = schema.Choice(
+            title=_(u"Transition"),
+            values=(
+                "slide",
+                "fade",
+            ),
+    )
 
     height = schema.Int(
             title=_(u"Height of portlet"),
@@ -70,7 +78,7 @@ class Assignment(base.Assignment):
     
     header = u""
    
-    def __init__(self, header=u"",  tags='', sort_on='', sort_order='', height='', speed=2000, timeout=2000, get_images=None):
+    def __init__(self, header=u"",  tags='', sort_on='', sort_order='', height='', speed=2000, timeout=2000, transition='slide', get_images=None):
         self.header = header
         self.sort_on = sort_on
         self.sort_order = sort_order
@@ -79,6 +87,7 @@ class Assignment(base.Assignment):
         self.height = height
         self.speed = speed
         self.timeout = timeout
+        self.transition= transition
 
     
     @property

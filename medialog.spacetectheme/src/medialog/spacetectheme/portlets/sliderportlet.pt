@@ -32,7 +32,7 @@
 <script> 
 $(function() {
   $('.sliderportlet').flexslider({
-    animation: "fade",
+    animation: ${view/data/transition},
     selector: '.slides',
     controlNav: false,
     directionNav: true,
