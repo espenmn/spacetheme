@@ -547,13 +547,10 @@ span#categories-filed-under {
 .portlet ul li {
 	padding-bottom: 10px;
 }
-
-#portal-column-two .flex-direction-nav  li:before,
-#portal-column-two .flex-direction-nav  li::before   {
-    display: none !important;
-
-}
-
+.flex-direction-nav li::before{
+display: none !important
+	} 
+ 
 #content-core ul li:before,
 .portlet ul li:before,
 #portal-column-two ul li:before ,
