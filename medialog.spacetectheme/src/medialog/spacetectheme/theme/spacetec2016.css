@@ -1,3 +1,5 @@
+/* @override http://spacetec.medialog.no/++theme++medialog.spacetectheme/spacetec2016.css */
+
 /* @override 
 	http://xweb14f.plana.dk:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
 	http://localhost:8080/www/++theme++medialog.spacetectheme/spacetec2016.css
@@ -23,10 +25,10 @@ aside.portlet.portletSliderPortlet {
 	display: none;
 }
 
-  #viewlet-below-content .portletWrapper:last-child section.portlet {
+#viewlet-below-content .portletWrapper:last-child section.portlet {
     padding-right: 0;
 
-  }
+}
 
 
 #content   nav.pagination ul li::before{
@@ -83,8 +85,6 @@ div.outer-wrapper {
 }
 
 
-
-
 #portal-footer {
 		background-color: #efefef;
 		height: auto;
@@ -107,8 +107,6 @@ div#modalsearch1 {
  	right: 0px;
  	top:  0px;
 } 
-
-
 
 input#searchGadget.searchField ,
 input.searchPage.form-control {
@@ -144,8 +142,6 @@ input.searchButton {
 ul.livesearch-results {
 	margin-top:  20px !important;
 }
-
-
 
 
 .searchboks {
@@ -236,7 +232,6 @@ aside#portal-column-two .portletHeader,
 h1.documentFirstHeading {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAADCAYAAACJZs+gAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0QzUwNzYxMjdGQjIxMUU0QTA0OUQ5RTYwOTg0MTk3MyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0QzUwNzYxMzdGQjIxMUU0QTA0OUQ5RTYwOTg0MTk3MyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjRDNTA3NjEwN0ZCMjExRTRBMDQ5RDlFNjA5ODQxOTczIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjRDNTA3NjExN0ZCMjExRTRBMDQ5RDlFNjA5ODQxOTczIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+lrbj6AAAADNJREFUeNpiZGBgsIDiE////z/BAAWMjIxUEWeCCgpAaWRAFXGQBSDbPkBpZEAVcYAAAwAjAyADyfgHowAAAABJRU5ErkJggg==");
   background-repeat: repeat-x;
-
   padding-top: 21px;
    padding-bottom: 20px;
   background-position: bottom;
@@ -1113,7 +1108,7 @@ iframe {
 #portal-breadcrumbs div.container{
   margin: 0;
   padding: 0;
-  display: flexbox;
+  display: flex;
 }
 
 #portal-breadcrumbs ol  {
@@ -1144,7 +1139,7 @@ span#breadcrumbs-current,
  
 @media (max-width: 900px)  {
 	
-body::not(.section-front-page) #portal-breadcrumbs > li > a {
+body:not(.section-front-page) #portal-breadcrumbs  li > a {
 	font-size: 0;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -1724,8 +1719,7 @@ li#breadcrumbs-3 {
     width: 1240px;
     padding: 15px 80px;
   }
-  .header img {
-   
+  .header img {   
     height: auto;
   }
 }
@@ -1763,7 +1757,7 @@ padding-right: 20px;
 .selected,
 .selected .hidden,
 .selected.hidden  {
-	display: block ,
+	display: block;
 }
 
 ul.selected,
