@@ -19,13 +19,13 @@
             description obj/description;
             obj_url obj/url;
             slideimage_url python:obj_url+'/@@images/image/preview'">
-      
+      		<div>
             <h3  tal:content="title" />
             <img src="" alt=""
 		        class="slider-img img-responsive"
 		        tal:attributes="alt title; src slideimage_url"/>
             <p  tal:content="description" />
-        
+        	</div>
         </div>
       </tal:repeat>
     </div>
@@ -39,7 +39,7 @@ $(function() {
     prevText: '<',
     nextText: '>',
     slideshowSpeed:	 ${view/data/speed},
-	animationSpeed: 	 ${view/data/timeout},
+	animationSpeed:  ${view/data/timeout},
   });
 });
 </script>
