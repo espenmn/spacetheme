@@ -35,7 +35,7 @@ $(function() {
     animation: '${view/data/animation}',
     selector: '.slides',
     controlNav: false,
-    directionNav: true,
+    directionNav: false,
     prevText: '<',
     nextText: '>',
     slideshowSpeed:	 ${view/data/speed},
