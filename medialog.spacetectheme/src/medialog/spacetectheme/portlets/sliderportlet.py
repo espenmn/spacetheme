@@ -86,7 +86,7 @@ class Assignment(base.Assignment):
         self.height = height
         self.speed = speed
         self.timeout = timeout
-        self. animation=  animation()
+        self. animation=  animation
 
     
     @property
