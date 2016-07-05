@@ -51,7 +51,7 @@ class ISliderPortlet(IPortletDataProvider):
     animation = schema.Choice(
             title=_(u"Animation"),
             values=(
-                "slide",
+                "fade",
             ),
     )
 
