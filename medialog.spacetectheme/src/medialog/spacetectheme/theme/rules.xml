@@ -45,6 +45,7 @@
   		<!-- social top -->
  		<replace  css:theme="#socialtop"   css:content="#socialtop"  href="/@@theme-fragment/socialtop"  />
  		
+        <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
  		
 		  <!-- Central column -->
 		  <replace css:theme="#content-container" method="raw">
@@ -62,6 +63,7 @@
 				  </p> -->
 				  <div class="row">
 					<div class="col100">
+					   <xsl:apply-templates css:select="#portal-breadcrumbs"/>
 					   <xsl:apply-templates css:select="#content"/>
 					</div>
 				  </div>
